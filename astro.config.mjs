@@ -5,5 +5,5 @@ import vercel from '@astrojs/vercel';
 export default defineConfig({
   output: 'static',
   adapter: vercel(),
-  site: 'https://elhagenatnel.com',
+  site: 'https://elhagenantel.com',
 });
