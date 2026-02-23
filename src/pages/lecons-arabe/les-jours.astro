@@ -11,6 +11,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <nav>
   <ul>
+    <li><a href="/" class="nav-home">← Accueil</a></li>
     <li><a href="#jours" class="active">Les 7 jours</a></li>
     <li><a href="#origines">Origines</a></li>
     <li><a href="#expressions">Expressions</a></li>
@@ -410,6 +411,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   nav a:hover, nav a.active {
     color: var(--accent);
     border-bottom-color: var(--accent);
+  }
+
+  nav a.nav-home {
+    color: var(--accent);
+    font-weight: 600;
+    border-bottom-color: transparent;
+    border-right: 1px solid var(--border);
+    margin-right: 0.5rem;
   }
 
   /* Main */
@@ -864,7 +873,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <script>
   // Smooth scroll for nav
-  document.querySelectorAll('nav a').forEach(link => {
+  document.querySelectorAll('nav a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const target = document.querySelector(link.getAttribute('href')!);
@@ -882,7 +891,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const top = section.offsetTop - 100;
       if (window.scrollY >= top) current = section.id;
     });
-    document.querySelectorAll('nav a').forEach(link => {
+    document.querySelectorAll('nav a[href^="#"]').forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
     });
