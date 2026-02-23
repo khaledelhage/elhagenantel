@@ -501,7 +501,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p>Teste ta compréhension! Identifie la bonne conjugaison pour chaque question.</p>
 
     <div class="score-display">
-      Score : <strong><span id="score">0</span> / <span id="total">0</span></strong>
+      Quiz : <strong><span id="progress">0</span> / <span id="total">0</span></strong>
+      <span class="score-separator">·</span>
+      Score : <strong><span id="score">0</span></strong>
     </div>
 
     <div class="quiz-area" id="quiz-area">
@@ -997,14 +999,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   .quiz-option.correct {
     border-color: var(--correct);
-    background: var(--correct-bg);
-    color: var(--correct);
+    background: var(--correct);
+    color: #fff;
   }
 
   .quiz-option.wrong {
     border-color: var(--wrong);
-    background: var(--wrong-bg);
-    color: var(--wrong);
+    background: var(--wrong);
+    color: #fff;
   }
 
   .quiz-option.disabled {
@@ -1058,6 +1060,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     color: var(--teal);
     font-size: 1.1em;
   }
+  .score-separator { margin: 0 0.8rem; color: var(--border); }
 
   /* Sentence builder */
   .sentence-examples {
@@ -1386,6 +1389,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   let score = 0;
   let totalAnswered = 0;
   let shuffledQuestions: typeof quizQuestions = [];
+  let answered = false;
 
   function shuffleArray<T>(arr: T[]): T[] {
     const a = [...arr];
@@ -1397,6 +1401,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   }
 
   function loadQuestion() {
+    answered = false;
+
     if (currentQuestion >= shuffledQuestions.length) {
       shuffledQuestions = shuffleArray(quizQuestions);
       currentQuestion = 0;
@@ -1404,7 +1410,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     const q = shuffledQuestions[currentQuestion];
     document.getElementById('quiz-context')!.textContent = q.context;
-    document.getElementById('quiz-verb')!.textContent = q.verb;
+    const verbEl = document.getElementById('quiz-verb')!;
+    verbEl.textContent = q.verb;
+    verbEl.style.direction = /[\u0600-\u06FF]/.test(q.verb) ? 'rtl' : 'ltr';
     document.getElementById('quiz-info')!.textContent = q.info;
 
     const optionsDiv = document.getElementById('quiz-options')!;
@@ -1425,10 +1433,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   }
 
   function checkAnswer(btn: HTMLElement, selected: string, question: typeof quizQuestions[0]) {
+    if (answered) return;
+    answered = true;
+
     const options = document.querySelectorAll('.quiz-option');
     options.forEach(o => o.classList.add('disabled'));
 
-    totalAnswered++;
     const feedback = document.getElementById('quiz-feedback')!;
 
     if (selected === question.correct) {
@@ -1436,6 +1446,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       btn.classList.add('correct');
       feedback.className = 'quiz-feedback show correct';
       feedback.innerHTML = `Correct! ${question.explanation}`;
+      document.getElementById('score')!.textContent = String(score);
     } else {
       btn.classList.add('wrong');
       options.forEach(o => {
@@ -1445,12 +1456,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       feedback.innerHTML = `La bonne réponse était <strong>${question.correct}</strong>. ${question.explanation}`;
     }
 
-    document.getElementById('score')!.textContent = String(score);
-    document.getElementById('total')!.textContent = String(totalAnswered);
     document.getElementById('next-btn')!.style.display = 'inline-block';
   }
 
   function nextQuestion() {
+    totalAnswered++;
+    document.getElementById('progress')!.textContent = String(totalAnswered);
     currentQuestion++;
     loadQuestion();
   }
@@ -1460,5 +1471,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   // Initialize
   shuffledQuestions = shuffleArray(quizQuestions);
+  document.getElementById('total')!.textContent = String(quizQuestions.length);
   loadQuestion();
 </script>
