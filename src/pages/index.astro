@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="El Hage Natnel" description="Leçons d'arabe">
+  <header>
+    <div class="container">
+      <h1>El Hage Natnel</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="lecons-arabe">
+      <div class="container">
+        <h2>Leçons d'arabe</h2>
+        <p>Contenu à venir.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; {new Date().getFullYear()} El Hage Natnel</p>
+    </div>
+  </footer>
+</BaseLayout>
+
+<style>
+  header {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .lecons-arabe {
+    padding: 4rem 0;
+  }
+
+  .lecons-arabe h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+  }
+
+  footer {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+    color: #666;
+    font-size: 0.875rem;
+  }
+</style>
