@@ -1,0 +1,1208 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="الطَّقْس — La météo en arabe" description="Apprendre le vocabulaire de la météo en arabe : soleil, pluie, neige, vent, expressions et quiz.">
+
+<header>
+  <h1>الطَّقْس</h1>
+  <p>La météo en arabe<br>vocabulaire, expressions et mnémoniques</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#phenomenes" class="active">Phénomènes</a></li>
+    <li><a href="#adjectifs">Adjectifs</a></li>
+    <li><a href="#mnemoniques">Mnémoniques</a></li>
+    <li><a href="#expressions">Expressions</a></li>
+    <li><a href="#nature">Nature</a></li>
+    <li><a href="#quiz">Quiz</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: PHÉNOMÈNES MÉTÉO -->
+  <section id="phenomenes">
+    <h2><span class="arabic">الطَّقْس</span> Les phénomènes météo</h2>
+
+    <p>Le mot طَقْس (ṭaqs) désigne le temps qu'il fait. Un autre mot très courant est الجَوّ (al-jaww), qui signifie « l'atmosphère, l'ambiance » et qu'on utilise au quotidien pour parler de la météo.</p>
+
+    <div class="conj-table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Français</th>
+            <th class="ar">العَرَبِيَّة</th>
+            <th>Translitération</th>
+            <th>Racine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pronoun-fr">Le soleil</td>
+            <td class="verb-ar">الشَّمْس</td>
+            <td class="transliteration">ash-shams</td>
+            <td class="meaning-col">ش م س</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">La pluie</td>
+            <td class="verb-ar">المَطَر</td>
+            <td class="transliteration">al-maṭar</td>
+            <td class="meaning-col">م ط ر</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">La neige</td>
+            <td class="verb-ar">الثَّلْج</td>
+            <td class="transliteration">ath-thalj</td>
+            <td class="meaning-col">ث ل ج</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Le vent</td>
+            <td class="verb-ar">الرِّيح</td>
+            <td class="transliteration">ar-rīḥ</td>
+            <td class="meaning-col">ر و ح</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Les nuages</td>
+            <td class="verb-ar">الغُيُوم</td>
+            <td class="transliteration">al-ghuyūm</td>
+            <td class="meaning-col">غ ي م</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">L'éclair</td>
+            <td class="verb-ar">البَرْق</td>
+            <td class="transliteration">al-barq</td>
+            <td class="meaning-col">ب ر ق</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Le tonnerre</td>
+            <td class="verb-ar">الرَّعْد</td>
+            <td class="transliteration">ar-raʻd</td>
+            <td class="meaning-col">ر ع د</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">La tempête</td>
+            <td class="verb-ar">العَاصِفَة</td>
+            <td class="transliteration">al-ʻāṣifa</td>
+            <td class="meaning-col">ع ص ف</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Le brouillard</td>
+            <td class="verb-ar">الضَّبَاب</td>
+            <td class="transliteration">aḍ-ḍabāb</td>
+            <td class="meaning-col">ض ب ب</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">La glace</td>
+            <td class="verb-ar">الجَلِيد</td>
+            <td class="transliteration">al-jalīd</td>
+            <td class="meaning-col">ج ل د</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="weather-cards">
+      <div class="weather-card sun-card">
+        <div class="weather-icon">☀️</div>
+        <div class="weather-arabic">الشَّمْس</div>
+        <div class="weather-label">soleil</div>
+      </div>
+      <div class="weather-card rain-card">
+        <div class="weather-icon">🌧️</div>
+        <div class="weather-arabic">المَطَر</div>
+        <div class="weather-label">pluie</div>
+      </div>
+      <div class="weather-card snow-card">
+        <div class="weather-icon">❄️</div>
+        <div class="weather-arabic">الثَّلْج</div>
+        <div class="weather-label">neige</div>
+      </div>
+      <div class="weather-card wind-card">
+        <div class="weather-icon">💨</div>
+        <div class="weather-arabic">الرِّيح</div>
+        <div class="weather-label">vent</div>
+      </div>
+      <div class="weather-card cloud-card">
+        <div class="weather-icon">☁️</div>
+        <div class="weather-arabic">الغُيُوم</div>
+        <div class="weather-label">nuages</div>
+      </div>
+      <div class="weather-card storm-card">
+        <div class="weather-icon">⛈️</div>
+        <div class="weather-arabic">العَاصِفَة</div>
+        <div class="weather-label">tempête</div>
+      </div>
+    </div>
+
+    <div class="concept-box teal">
+      <h4>Le saviez-vous ?</h4>
+      <p>Le mot الرِّيح (le vent) partage la racine ر و ح avec رُوح (l'esprit, l'âme) et رَائِحَة (l'odeur). En arabe, le vent, le souffle et l'esprit sont liés par la même racine. On retrouve ce lien dans d'autres langues sémitiques et même en latin (spiritus = souffle et esprit).</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: ADJECTIFS -->
+  <section id="adjectifs">
+    <h2><span class="arabic">صِفَات</span> Décrire le temps</h2>
+
+    <p>Pour décrire la météo, on utilise la structure الجَوُّ + adjectif (le temps est + adjectif).</p>
+
+    <div class="conj-table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Français</th>
+            <th class="ar">العَرَبِيَّة</th>
+            <th>Translitération</th>
+            <th>Exemple</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pronoun-fr">Chaud</td>
+            <td class="verb-ar">حَارّ</td>
+            <td class="transliteration">ḥārr</td>
+            <td class="example-col"><span class="arabic-sm">الجَوُّ حَارٌّ</span></td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Froid</td>
+            <td class="verb-ar">بَارِد</td>
+            <td class="transliteration">bārid</td>
+            <td class="example-col"><span class="arabic-sm">الجَوُّ بَارِدٌ</span></td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Tempéré / doux</td>
+            <td class="verb-ar">مُعْتَدِل</td>
+            <td class="transliteration">muʻtadil</td>
+            <td class="example-col"><span class="arabic-sm">الجَوُّ مُعْتَدِلٌ</span></td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Humide</td>
+            <td class="verb-ar">رَطْب</td>
+            <td class="transliteration">raṭb</td>
+            <td class="example-col"><span class="arabic-sm">الجَوُّ رَطْبٌ</span></td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Sec</td>
+            <td class="verb-ar">جَافّ</td>
+            <td class="transliteration">jāff</td>
+            <td class="example-col"><span class="arabic-sm">الجَوُّ جَافٌّ</span></td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Nuageux</td>
+            <td class="verb-ar">غَائِم</td>
+            <td class="transliteration">ghāʼim</td>
+            <td class="example-col"><span class="arabic-sm">الجَوُّ غَائِمٌ</span></td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Ensoleillé</td>
+            <td class="verb-ar">مُشْمِس</td>
+            <td class="transliteration">mushmis</td>
+            <td class="example-col"><span class="arabic-sm">الجَوُّ مُشْمِسٌ</span></td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Venteux</td>
+            <td class="verb-ar">عَاصِف</td>
+            <td class="transliteration">ʻāṣif</td>
+            <td class="example-col"><span class="arabic-sm">الجَوُّ عَاصِفٌ</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>La structure</h4>
+      <p>Toutes ces phrases suivent le même modèle :</p>
+      <div class="structure-demo">
+        <span class="struct-part struct-subject">الجَوُّ</span>
+        <span class="struct-label">le temps</span>
+        <span class="struct-plus">+</span>
+        <span class="struct-part struct-adj">adjectif</span>
+        <span class="struct-label">description</span>
+      </div>
+      <p style="margin-top:1rem">C'est une phrase nominale (جُمْلَة اِسْمِيَّة) : pas de verbe « être » en arabe au présent!</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: MNÉMONIQUES -->
+  <section id="mnemoniques">
+    <h2><span class="arabic">حِيَل</span> Mnémoniques pour francophones</h2>
+
+    <div class="mnemonic-cards">
+      <div class="mnemonic-card">
+        <div class="mnemonic-word">
+          <span class="arabic">الشَّمْس</span>
+          <span class="translit">ash-shams</span>
+        </div>
+        <div class="mnemonic-trick">
+          <div class="mnemonic-title">« Chamois au soleil »</div>
+          <div class="mnemonic-text">shams sonne comme « chamois ». Le chamois bronze au soleil sur sa montagne.</div>
+        </div>
+      </div>
+
+      <div class="mnemonic-card">
+        <div class="mnemonic-word">
+          <span class="arabic">المَطَر</span>
+          <span class="translit">al-maṭar</span>
+        </div>
+        <div class="mnemonic-trick">
+          <div class="mnemonic-title">« Matador sous la pluie »</div>
+          <div class="mnemonic-text">maṭar sonne comme « matador ». Imagine un matador qui utilise sa cape comme parapluie.</div>
+        </div>
+      </div>
+
+      <div class="mnemonic-card">
+        <div class="mnemonic-word">
+          <span class="arabic">الثَّلْج</span>
+          <span class="translit">ath-thalj</span>
+        </div>
+        <div class="mnemonic-trick">
+          <div class="mnemonic-title">« Th-alj, la langue gelée »</div>
+          <div class="mnemonic-text">Le « th » se prononce en sortant la langue, comme si elle était gelée par la neige. Et « thalj » ressemble à « gel » en espagnol (hielo → jelado).</div>
+        </div>
+      </div>
+
+      <div class="mnemonic-card">
+        <div class="mnemonic-word">
+          <span class="arabic">الرِّيح</span>
+          <span class="translit">ar-rīḥ</span>
+        </div>
+        <div class="mnemonic-trick">
+          <div class="mnemonic-title">« Le vent siffle : riiiiih »</div>
+          <div class="mnemonic-text">rīḥ imite le sifflement du vent. Écoute le vent : « riiiiih! ». Même racine que رُوح (l'esprit), car le vent est le souffle du monde.</div>
+        </div>
+      </div>
+
+      <div class="mnemonic-card">
+        <div class="mnemonic-word">
+          <span class="arabic">البَرْق</span>
+          <span class="translit">al-barq</span>
+        </div>
+        <div class="mnemonic-trick">
+          <div class="mnemonic-title">« Barque frappée par la foudre »</div>
+          <div class="mnemonic-text">barq sonne comme « barque ». Un éclair frappe une barque en pleine mer. Note : le nom بَرَاق (Burāq), la monture ailée du Prophète, vient de la même racine (briller, éclat).</div>
+        </div>
+      </div>
+
+      <div class="mnemonic-card">
+        <div class="mnemonic-word">
+          <span class="arabic">الرَّعْد</span>
+          <span class="translit">ar-raʻd</span>
+        </div>
+        <div class="mnemonic-trick">
+          <div class="mnemonic-title">« Le tonnerre est RAD! »</div>
+          <div class="mnemonic-text">raʻd sonne comme « rad » (radical en anglais). Le tonnerre gronde avec puissance : c'est rad! Le Coran a même une sourate appelée الرَّعْد (sourate 13).</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>Résumé rapide</h4>
+      <div class="summary-mnemo">
+        <div class="summary-row">
+          <span class="arabic">الشَّمْس</span>
+          <span class="arrow-right">→</span>
+          <span>chamois au soleil</span>
+        </div>
+        <div class="summary-row">
+          <span class="arabic">المَطَر</span>
+          <span class="arrow-right">→</span>
+          <span>matador sous la pluie</span>
+        </div>
+        <div class="summary-row">
+          <span class="arabic">الثَّلْج</span>
+          <span class="arrow-right">→</span>
+          <span>langue gelée (th!)</span>
+        </div>
+        <div class="summary-row">
+          <span class="arabic">الرِّيح</span>
+          <span class="arrow-right">→</span>
+          <span>riiiiih! (sifflement du vent)</span>
+        </div>
+        <div class="summary-row">
+          <span class="arabic">البَرْق</span>
+          <span class="arrow-right">→</span>
+          <span>barque frappée par la foudre</span>
+        </div>
+        <div class="summary-row">
+          <span class="arabic">الرَّعْد</span>
+          <span class="arrow-right">→</span>
+          <span>le tonnerre est RAD!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: EXPRESSIONS -->
+  <section id="expressions">
+    <h2><span class="arabic">تَعْبِيرَات</span> Expressions utiles</h2>
+
+    <h3>Décrire le temps qu'il fait</h3>
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">الجَوُّ حَارٌّ جِدًّا اليَوْمَ</div>
+        <div class="fr-line">Il fait très chaud aujourd'hui</div>
+        <div class="note">جِدًّا = très · اليَوْمَ = aujourd'hui</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">تُمْطِرُ السَّمَاءُ</div>
+        <div class="fr-line">Il pleut (le ciel pleut)</div>
+        <div class="note">تُمْطِر = elle fait pleuvoir · السَّمَاء = le ciel</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">الثَّلْجُ يَتَسَاقَطُ</div>
+        <div class="fr-line">La neige tombe</div>
+        <div class="note">يَتَسَاقَط = tombe (lentement, flocon par flocon)</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">الرِّيحُ قَوِيَّةٌ</div>
+        <div class="fr-line">Le vent est fort</div>
+        <div class="note">قَوِيَّة = forte (féminin, car الرِّيح est féminin)</div>
+      </div>
+    </div>
+
+    <h3>Poser des questions</h3>
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">كَيْفَ الجَوُّ؟</div>
+        <div class="fr-line">Comment est le temps ?</div>
+        <div class="note">كَيْفَ = comment</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">هَلْ سَتُمْطِرُ غَدًا؟</div>
+        <div class="fr-line">Est-ce qu'il pleuvra demain ?</div>
+        <div class="note">هَلْ = est-ce que · سَـ = futur proche</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">مَا دَرَجَةُ الحَرَارَةِ؟</div>
+        <div class="fr-line">Quelle est la température ?</div>
+        <div class="note">دَرَجَة = degré · الحَرَارَة = la chaleur, la température</div>
+      </div>
+    </div>
+
+    <h3>Le temps au Québec</h3>
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">الشِّتَاءُ طَوِيلٌ فِي كِيبِك</div>
+        <div class="fr-line">L'hiver est long au Québec</div>
+        <div class="note">طَوِيل = long · كِيبِك = Québec</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">دَرَجَةُ الحَرَارَةِ عِشْرُونَ تَحْتَ الصِّفْرِ</div>
+        <div class="fr-line">La température est de vingt sous zéro</div>
+        <div class="note">تَحْتَ = sous · الصِّفْر = le zéro</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">الرَّبِيعُ جَمِيلٌ لَكِنَّهُ قَصِيرٌ</div>
+        <div class="fr-line">Le printemps est beau mais court</div>
+        <div class="note">جَمِيل = beau · لَكِنَّ = mais · قَصِير = court</div>
+      </div>
+    </div>
+
+    <div class="concept-box teal">
+      <h4>Note grammaticale</h4>
+      <p>Le mot الرِّيح (le vent) est féminin en arabe, même s'il n'a pas de « ta marbūṭa » (ة) à la fin. C'est une exception à retenir. On dit donc الرِّيحُ قَوِيَّةٌ (le vent est forte) et non قَوِيٌّ.</p>
+      <p>De même, الشَّمْس (le soleil) est féminin. On dit الشَّمْسُ سَاطِعَةٌ (le soleil est brillant).</p>
+    </div>
+  </section>
+
+  <!-- SECTION 5: NATURE ET ÉCLAIR/TONNERRE -->
+  <section id="nature">
+    <h2><span class="arabic">الطَّبِيعَة</span> Le ciel et les éléments</h2>
+
+    <div class="comparison">
+      <div class="comparison-col past">
+        <div class="label">L'éclair</div>
+        <h4>البَرْق</h4>
+        <div class="meaning">al-barq</div>
+        <div class="example" style="margin-top:0.8rem">Racine ب ر ق</div>
+        <div class="meaning">briller, étinceler</div>
+        <div class="meaning" style="margin-top:0.5rem">De la même racine : بَرَاق (Burāq), بَرَّاق (brillant), بَرْقِيَّة (télégramme, car rapide comme l'éclair).</div>
+      </div>
+      <div class="comparison-col present">
+        <div class="label">Le tonnerre</div>
+        <h4>الرَّعْد</h4>
+        <div class="meaning">ar-raʻd</div>
+        <div class="example" style="margin-top:0.8rem">Racine ر ع د</div>
+        <div class="meaning">gronder, trembler</div>
+        <div class="meaning" style="margin-top:0.5rem">De la même racine : رَعَدَ (gronder), اِرْتَعَدَ (trembler de peur). Le Coran a une sourate entière nommée الرَّعْد (sourate 13).</div>
+      </div>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>Vocabulaire complémentaire</h4>
+      <div class="vocab-grid">
+        <div class="vocab-item">
+          <span class="arabic">السَّمَاء</span>
+          <span class="vocab-fr">le ciel</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">قَوْسُ قُزَح</span>
+          <span class="vocab-fr">l'arc-en-ciel</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">النَّدَى</span>
+          <span class="vocab-fr">la rosée</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">الصَّقِيع</span>
+          <span class="vocab-fr">le gel / givre</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">المَوْجَة</span>
+          <span class="vocab-fr">la vague</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">الفَيَضَان</span>
+          <span class="vocab-fr">l'inondation</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="concept-box teal">
+      <h4>Températures et mesures</h4>
+      <div class="vocab-grid">
+        <div class="vocab-item">
+          <span class="arabic">دَرَجَة</span>
+          <span class="vocab-fr">degré</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">الحَرَارَة</span>
+          <span class="vocab-fr">la température</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">فَوْقَ الصِّفْر</span>
+          <span class="vocab-fr">au-dessus de zéro</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">تَحْتَ الصِّفْر</span>
+          <span class="vocab-fr">sous zéro</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">مُرْتَفِع</span>
+          <span class="vocab-fr">élevé</span>
+        </div>
+        <div class="vocab-item">
+          <span class="arabic">مُنْخَفِض</span>
+          <span class="vocab-fr">bas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: QUIZ -->
+  <section id="quiz">
+    <h2>Quiz interactif</h2>
+    <p>Teste ta connaissance du vocabulaire de la météo en arabe!</p>
+
+    <div class="score-display">
+      Score : <strong><span id="score">0</span> / <span id="total">0</span></strong>
+    </div>
+
+    <div class="quiz-area" id="quiz-area">
+      <div class="quiz-prompt">
+        <div class="context" id="quiz-context"></div>
+        <div class="question-verb" id="quiz-verb"></div>
+        <div class="question-info" id="quiz-info"></div>
+      </div>
+      <div class="quiz-options" id="quiz-options"></div>
+      <div class="quiz-feedback" id="quiz-feedback"></div>
+      <div class="quiz-controls">
+        <button class="btn" id="next-btn">Question suivante →</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Créé avec soin pour l'apprentissage de l'arabe par ton père</p>
+  <p style="font-family:'Amiri',serif; font-size:1.2em; margin-top:0.5rem; direction:rtl;">بالتوفيق والنجاح</p>
+</footer>
+
+</BaseLayout>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #faf7f2;
+    --bg-card: #ffffff;
+    --bg-dark: #1a1a2e;
+    --accent: #c4873b;
+    --accent-light: #f5e6d0;
+    --accent-dark: #8b5e2a;
+    --teal: #2a7a6e;
+    --teal-light: #e0f2ef;
+    --text: #2c2c2c;
+    --text-light: #6b6b6b;
+    --text-arabic: #1a1a2e;
+    --border: #e8e0d4;
+    --shadow: 0 2px 20px rgba(0,0,0,0.06);
+    --shadow-hover: 0 4px 30px rgba(0,0,0,0.1);
+    --radius: 12px;
+    --correct: #2a7a4e;
+    --correct-bg: #e8f5ec;
+    --wrong: #b83b3b;
+    --wrong-bg: #fce8e8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Lora', Georgia, serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .arabic {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+    font-size: 1.3em;
+    color: var(--text-arabic);
+    line-height: 2;
+  }
+
+  .transliteration {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  /* Header */
+  header {
+    background: var(--bg-dark);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: 'اللغة العربية';
+    font-family: 'Amiri', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    opacity: 0.03;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  header h1 {
+    font-family: 'Amiri', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    direction: rtl;
+    color: var(--accent);
+  }
+
+  header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    max-width: 500px;
+    margin: 0.5rem auto 0;
+  }
+
+  /* Navigation */
+  nav {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover, nav a.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* Main */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+    animation: fadeIn 0.6s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    color: var(--accent-dark);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-light);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  h2 .arabic { font-size: 1.4em; color: var(--accent-dark); }
+
+  h3 {
+    font-size: 1.15rem;
+    color: var(--teal);
+    margin: 1.5rem 0 0.8rem;
+  }
+
+  p { margin-bottom: 1rem; }
+
+  /* Table */
+  .conj-table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  table { width: 100%; border-collapse: collapse; background: var(--bg-card); font-size: 0.95rem; }
+  thead { background: var(--bg-dark); color: #fff; }
+  thead th { padding: 1rem; font-weight: 600; text-align: center; }
+  thead th.ar { font-family: 'Amiri', serif; font-size: 1.3em; direction: rtl; }
+
+  tbody td {
+    padding: 0.8rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s ease;
+  }
+
+  tbody tr:hover td { background: var(--accent-light); }
+  tbody td.pronoun-fr { font-weight: 600; color: var(--text-light); text-align: left; font-size: 0.9em; }
+  tbody td.verb-ar { font-family: 'Amiri', serif; font-size: 1.4em; direction: rtl; color: var(--text-arabic); font-weight: 700; }
+  tbody td.meaning-col { font-family: 'Amiri', serif; font-size: 1.1em; direction: rtl; color: var(--text-light); }
+
+  tbody td.example-col {
+    direction: rtl;
+  }
+
+  .arabic-sm {
+    font-family: 'Amiri', serif;
+    font-size: 1.15em;
+    color: var(--text-arabic);
+    direction: rtl;
+  }
+
+  /* Weather cards */
+  .weather-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .weather-card {
+    text-align: center;
+    padding: 1.2rem 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .weather-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .weather-icon { font-size: 2.2rem; margin-bottom: 0.4rem; }
+
+  .weather-arabic {
+    font-family: 'Amiri', serif;
+    font-size: 1.5rem;
+    direction: rtl;
+    color: var(--text-arabic);
+    font-weight: 700;
+  }
+
+  .weather-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-top: 0.2rem;
+  }
+
+  .sun-card { border-top: 3px solid #ff9800; }
+  .rain-card { border-top: 3px solid #1976d2; }
+  .snow-card { border-top: 3px solid #90caf9; }
+  .wind-card { border-top: 3px solid #78909c; }
+  .cloud-card { border-top: 3px solid #b0bec5; }
+  .storm-card { border-top: 3px solid #4a148c; }
+
+  /* Structure demo */
+  .structure-demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+
+  .struct-part {
+    font-family: 'Amiri', serif;
+    font-size: 1.6rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    direction: rtl;
+  }
+
+  .struct-subject { background: var(--teal-light); color: var(--teal); }
+  .struct-adj { background: var(--accent-light); color: var(--accent-dark); }
+  .struct-plus { font-size: 1.5rem; color: var(--text-light); }
+
+  .struct-label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-align: center;
+    display: block;
+    margin-top: 0.2rem;
+  }
+
+  /* Concept Box */
+  .concept-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+
+  .concept-box.highlight { border-left: 4px solid var(--accent); }
+  .concept-box.teal { border-left: 4px solid var(--teal); }
+
+  .concept-box h4 {
+    font-size: 1rem;
+    color: var(--accent-dark);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Comparison Box */
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .comparison-col {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .comparison-col h4 { font-family: 'Amiri', serif; font-size: 1.8rem; margin-bottom: 0.5rem; direction: rtl; }
+  .comparison-col.past { border-top: 4px solid var(--teal); }
+  .comparison-col.present { border-top: 4px solid var(--accent); }
+  .comparison-col .label { font-size: 0.85rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.8rem; }
+  .comparison-col .example { font-family: 'Amiri', serif; font-size: 1.2rem; direction: rtl; margin: 0.5rem 0; }
+  .comparison-col .meaning { font-size: 0.9rem; color: var(--text-light); font-style: italic; }
+
+  /* Vocab grid */
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .vocab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.6rem;
+    background: var(--teal-light);
+    border-radius: 8px;
+  }
+
+  .concept-box.highlight .vocab-item { background: var(--accent-light); }
+  .vocab-item .arabic { font-size: 1.2em; }
+  .vocab-fr { font-size: 0.85rem; color: var(--text-light); }
+
+  /* Sentence cards */
+  .sentence-examples { display: flex; flex-direction: column; gap: 1rem; margin: 1rem 0; }
+
+  .sentence-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    transition: transform 0.2s ease;
+  }
+
+  .sentence-card:hover { transform: translateX(4px); }
+
+  .sentence-card .ar-line { font-family: 'Amiri', serif; font-size: 1.5rem; direction: rtl; text-align: right; color: var(--text-arabic); }
+  .sentence-card .fr-line { color: var(--text-light); font-size: 0.9rem; font-style: italic; }
+  .sentence-card .note { font-size: 0.8rem; color: var(--accent-dark); background: var(--accent-light); display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px; margin-top: 0.3rem; width: fit-content; }
+
+  /* Mnemonic cards */
+  .mnemonic-cards { display: flex; flex-direction: column; gap: 1.2rem; margin: 1.5rem 0; }
+
+  .mnemonic-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease;
+  }
+
+  .mnemonic-card:hover { transform: translateX(4px); }
+
+  .mnemonic-word { min-width: 120px; text-align: center; flex-shrink: 0; }
+  .mnemonic-word .arabic { display: block; font-size: 1.5em; font-weight: 700; }
+  .mnemonic-word .translit { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text-light); font-style: italic; }
+  .mnemonic-title { font-weight: 600; color: var(--accent-dark); margin-bottom: 0.3rem; font-size: 1.05rem; }
+  .mnemonic-text { color: var(--text); font-size: 0.95rem; line-height: 1.6; }
+
+  /* Summary mnemonics */
+  .summary-mnemo { display: flex; flex-direction: column; gap: 0.6rem; }
+  .summary-row { display: flex; align-items: center; gap: 0.8rem; padding: 0.4rem 0; }
+  .summary-row .arabic { font-size: 1.2em; min-width: 80px; text-align: center; }
+  .arrow-right { color: var(--accent); font-weight: 700; }
+
+  /* Quiz */
+  .quiz-area { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; margin: 1.5rem 0; box-shadow: var(--shadow); }
+  .quiz-prompt { text-align: center; margin-bottom: 1.5rem; }
+  .quiz-prompt .context { font-size: 0.95rem; color: var(--text-light); margin-bottom: 0.5rem; }
+  .quiz-prompt .question-verb { font-family: 'Amiri', serif; font-size: 2.2rem; color: var(--text-arabic); direction: rtl; }
+  .quiz-prompt .question-info { font-size: 1rem; color: var(--accent-dark); margin-top: 0.5rem; font-weight: 600; }
+  .quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 1rem; }
+
+  .quiz-option {
+    padding: 1rem;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+    font-family: 'Amiri', serif;
+    font-size: 1.4rem;
+    direction: rtl;
+  }
+
+  .quiz-option:hover:not(.disabled) { border-color: var(--accent); background: var(--accent-light); transform: translateY(-1px); }
+  .quiz-option.correct { border-color: var(--correct); background: var(--correct-bg); color: var(--correct); }
+  .quiz-option.wrong { border-color: var(--wrong); background: var(--wrong-bg); color: var(--wrong); }
+  .quiz-option.disabled { cursor: default; opacity: 0.7; }
+  .quiz-option.fr-option { font-family: 'Lora', Georgia, serif; font-size: 1rem; direction: ltr; }
+
+  .quiz-feedback { text-align: center; padding: 1rem; border-radius: 8px; margin-top: 1rem; display: none; font-size: 0.95rem; }
+  .quiz-feedback.show { display: block; }
+  .quiz-feedback.correct { background: var(--correct-bg); color: var(--correct); }
+  .quiz-feedback.wrong { background: var(--wrong-bg); color: var(--wrong); }
+  .quiz-controls { text-align: center; margin-top: 1.2rem; }
+
+  .btn { padding: 0.7rem 2rem; background: var(--accent); color: #fff; border: none; border-radius: 8px; font-family: 'Lora', serif; font-size: 1rem; cursor: pointer; transition: all 0.2s ease; }
+  .btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
+  .score-display { text-align: center; font-size: 0.95rem; color: var(--text-light); margin-bottom: 1rem; }
+  .score-display strong { color: var(--teal); font-size: 1.1em; }
+
+  /* Footer */
+  footer { text-align: center; padding: 2rem; color: var(--text-light); font-size: 0.85rem; border-top: 1px solid var(--border); }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    .weather-cards { grid-template-columns: repeat(2, 1fr); }
+    .comparison { grid-template-columns: 1fr; }
+    .quiz-options { grid-template-columns: 1fr; }
+    .vocab-grid { grid-template-columns: repeat(2, 1fr); }
+    nav a { padding: 0.8rem 1rem; font-size: 0.85rem; }
+    main { padding: 1.5rem 1rem 3rem; }
+    .mnemonic-card { flex-direction: column; gap: 0.8rem; }
+    .mnemonic-word { min-width: auto; }
+    .structure-demo { flex-direction: column; }
+  }
+</style>
+
+<script>
+  // Smooth scroll for nav
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href')!);
+      target!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+
+  // Active nav on scroll
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    let current = '';
+    sections.forEach(section => {
+      const top = section.offsetTop - 100;
+      if (window.scrollY >= top) current = section.id;
+    });
+    document.querySelectorAll('nav a').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+    });
+  });
+
+  // Quiz System
+  const quizQuestions = [
+    {
+      context: "Comment dit-on en arabe ?",
+      verb: "Le soleil",
+      info: "",
+      correct: "الشَّمْس",
+      options: ["الشَّمْس", "المَطَر", "الرِّيح", "الثَّلْج"],
+      explanation: "Le soleil = الشَّمْس (ash-shams), pense au chamois!"
+    },
+    {
+      context: "Que signifie ce mot ?",
+      verb: "المَطَر",
+      info: "",
+      correct: "La pluie",
+      options: ["La pluie", "La neige", "Le vent", "Le brouillard"],
+      explanation: "المَطَر (al-maṭar) = la pluie, pense au matador!",
+      frOptions: true
+    },
+    {
+      context: "Comment dit-on en arabe ?",
+      verb: "La neige",
+      info: "",
+      correct: "الثَّلْج",
+      options: ["الثَّلْج", "الجَلِيد", "الضَّبَاب", "الصَّقِيع"],
+      explanation: "La neige = الثَّلْج (ath-thalj), le « th » de la langue gelée!"
+    },
+    {
+      context: "Que signifie ce mot ?",
+      verb: "الرِّيح",
+      info: "",
+      correct: "Le vent",
+      options: ["Le vent", "L'éclair", "Le tonnerre", "La tempête"],
+      explanation: "الرِّيح (ar-rīḥ) = le vent, même racine que رُوح (l'esprit)",
+      frOptions: true
+    },
+    {
+      context: "Comment dit-on en arabe ?",
+      verb: "L'éclair",
+      info: "",
+      correct: "البَرْق",
+      options: ["البَرْق", "الرَّعْد", "العَاصِفَة", "الشَّمْس"],
+      explanation: "L'éclair = البَرْق (al-barq), la barque frappée par la foudre!"
+    },
+    {
+      context: "Que signifie ce mot ?",
+      verb: "الرَّعْد",
+      info: "",
+      correct: "Le tonnerre",
+      options: ["Le tonnerre", "L'éclair", "La tempête", "Le vent"],
+      explanation: "الرَّعْد (ar-raʻd) = le tonnerre, c'est RAD!",
+      frOptions: true
+    },
+    {
+      context: "Comment dit-on « il fait chaud » ?",
+      verb: "Il fait chaud",
+      info: "",
+      correct: "الجَوُّ حَارٌّ",
+      options: ["الجَوُّ حَارٌّ", "الجَوُّ بَارِدٌ", "الجَوُّ غَائِمٌ", "الجَوُّ مُشْمِسٌ"],
+      explanation: "حَارّ = chaud, الجَوُّ حَارٌّ = il fait chaud"
+    },
+    {
+      context: "Que signifie cette phrase ?",
+      verb: "الجَوُّ بَارِدٌ",
+      info: "",
+      correct: "Il fait froid",
+      options: ["Il fait froid", "Il fait chaud", "Il fait beau", "Il y a du vent"],
+      explanation: "بَارِد = froid, الجَوُّ بَارِدٌ = il fait froid",
+      frOptions: true
+    },
+    {
+      context: "Comment dit-on en arabe ?",
+      verb: "Le brouillard",
+      info: "",
+      correct: "الضَّبَاب",
+      options: ["الضَّبَاب", "الغُيُوم", "النَّدَى", "الصَّقِيع"],
+      explanation: "Le brouillard = الضَّبَاب (aḍ-ḍabāb)"
+    },
+    {
+      context: "Que signifie ce mot ?",
+      verb: "العَاصِفَة",
+      info: "",
+      correct: "La tempête",
+      options: ["La tempête", "Le vent", "L'éclair", "Les nuages"],
+      explanation: "العَاصِفَة (al-ʻāṣifa) = la tempête, de la racine ع ص ف (souffler avec violence)",
+      frOptions: true
+    },
+    {
+      context: "Quel mot partage sa racine avec رُوح (l'esprit) ?",
+      verb: "ر و ح",
+      info: "Même racine que l'esprit et le souffle",
+      correct: "الرِّيح (le vent)",
+      options: ["الرِّيح (le vent)", "الرَّعْد (le tonnerre)", "المَطَر (la pluie)", "البَرْق (l'éclair)"],
+      explanation: "الرِّيح (le vent), رُوح (l'esprit) et رَائِحَة (l'odeur) partagent la racine ر و ح",
+      frOptions: true
+    },
+    {
+      context: "Comment demander « Comment est le temps ? »",
+      verb: "...؟",
+      info: "",
+      correct: "كَيْفَ الجَوُّ؟",
+      options: ["كَيْفَ الجَوُّ؟", "مَا الجَوُّ؟", "أَيْنَ الجَوُّ؟", "هَلْ الجَوُّ؟"],
+      explanation: "كَيْفَ = comment, كَيْفَ الجَوُّ؟ = comment est le temps ?"
+    },
+    {
+      context: "Que signifie غَائِم ?",
+      verb: "غَائِم",
+      info: "",
+      correct: "Nuageux",
+      options: ["Nuageux", "Venteux", "Ensoleillé", "Humide"],
+      explanation: "غَائِم = nuageux, de غَيْمَة (un nuage)",
+      frOptions: true
+    },
+    {
+      context: "Comment dit-on « ensoleillé » ?",
+      verb: "Ensoleillé",
+      info: "Dérivé de الشَّمْس",
+      correct: "مُشْمِس",
+      options: ["مُشْمِس", "غَائِم", "مُعْتَدِل", "جَافّ"],
+      explanation: "مُشْمِس = ensoleillé, dérivé de شَمْس (soleil)"
+    },
+  ];
+
+  interface QuizQuestion {
+    context: string;
+    verb: string;
+    info: string;
+    correct: string;
+    options: string[];
+    explanation: string;
+    frOptions?: boolean;
+  }
+
+  let currentQuestion = 0;
+  let score = 0;
+  let totalAnswered = 0;
+  let shuffledQuestions: QuizQuestion[] = [];
+
+  function shuffleArray<T>(arr: T[]): T[] {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function loadQuestion() {
+    if (currentQuestion >= shuffledQuestions.length) {
+      shuffledQuestions = shuffleArray(quizQuestions);
+      currentQuestion = 0;
+    }
+
+    const q = shuffledQuestions[currentQuestion];
+    document.getElementById('quiz-context')!.textContent = q.context;
+    document.getElementById('quiz-verb')!.textContent = q.verb;
+    document.getElementById('quiz-info')!.textContent = q.info;
+
+    const optionsDiv = document.getElementById('quiz-options')!;
+    optionsDiv.innerHTML = '';
+
+    const shuffledOptions = shuffleArray(q.options);
+    shuffledOptions.forEach(opt => {
+      const btn = document.createElement('div');
+      btn.className = q.frOptions ? 'quiz-option fr-option' : 'quiz-option';
+      btn.textContent = opt;
+      btn.addEventListener('click', () => checkAnswer(btn, opt, q));
+      optionsDiv.appendChild(btn);
+    });
+
+    document.getElementById('quiz-feedback')!.className = 'quiz-feedback';
+    document.getElementById('quiz-feedback')!.style.display = 'none';
+    document.getElementById('next-btn')!.style.display = 'none';
+  }
+
+  function checkAnswer(btn: HTMLElement, selected: string, question: QuizQuestion) {
+    const options = document.querySelectorAll('.quiz-option');
+    options.forEach(o => o.classList.add('disabled'));
+
+    totalAnswered++;
+    const feedback = document.getElementById('quiz-feedback')!;
+
+    if (selected === question.correct) {
+      score++;
+      btn.classList.add('correct');
+      feedback.className = 'quiz-feedback show correct';
+      feedback.innerHTML = `Correct! ${question.explanation}`;
+    } else {
+      btn.classList.add('wrong');
+      options.forEach(o => {
+        if (o.textContent === question.correct) o.classList.add('correct');
+      });
+      feedback.className = 'quiz-feedback show wrong';
+      feedback.innerHTML = `La bonne réponse était <strong>${question.correct}</strong>. ${question.explanation}`;
+    }
+
+    document.getElementById('score')!.textContent = String(score);
+    document.getElementById('total')!.textContent = String(totalAnswered);
+    document.getElementById('next-btn')!.style.display = 'inline-block';
+  }
+
+  function nextQuestion() {
+    currentQuestion++;
+    loadQuestion();
+  }
+
+  document.getElementById('next-btn')!.addEventListener('click', nextQuestion);
+
+  shuffledQuestions = shuffleArray(quizQuestions);
+  loadQuestion();
+</script>
