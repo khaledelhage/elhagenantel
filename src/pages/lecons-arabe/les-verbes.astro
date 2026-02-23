@@ -1,0 +1,1455 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="الأفعال العربية — Le verbe arabe : الماضي et المضارع" description="Le verbe arabe : comprendre et conjuguer الماضي (le passé) et المضارع (le présent)">
+
+<header>
+  <h1>الأفعال العربية</h1>
+  <p>Le verbe arabe : comprendre et conjuguer<br>الماضي (le passé) et المضارع (le présent)</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#racine" class="active">La racine</a></li>
+    <li><a href="#madi">الماضي</a></li>
+    <li><a href="#mudari">المضارع</a></li>
+    <li><a href="#comparer">Comparer</a></li>
+    <li><a href="#phrases">Phrases</a></li>
+    <li><a href="#quiz">Quiz</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: LA RACINE -->
+  <section id="racine">
+    <h2><span class="arabic">الجَذْر</span> Le système de racines</h2>
+
+    <p>En arabe, presque tous les mots sont construits à partir d'une racine de 3 lettres (parfois 4). Cette racine porte le sens fondamental, et les différentes formes du mot sont créées en ajoutant des voyelles et des lettres autour de cette racine.</p>
+
+    <p>C'est très différent du français. Pense à la racine comme un squelette, les voyelles et les affixes sont les muscles et la peau qui lui donnent sa forme finale.</p>
+
+    <div class="root-demo">
+      <p style="margin-bottom:1rem; color:var(--text-light);">Exemple : la racine</p>
+      <div class="root-letters">
+        <div class="root-letter">ك</div>
+        <div class="root-letter">ت</div>
+        <div class="root-letter">ب</div>
+      </div>
+      <div class="root-label">ك ت ب : sens fondamental : écrire</div>
+
+      <div class="derived-words">
+        <div class="derived-word">
+          <span class="arabic">كَتَبَ</span>
+          <small>il a écrit</small>
+        </div>
+        <div class="derived-word">
+          <span class="arabic">يَكْتُبُ</span>
+          <small>il écrit</small>
+        </div>
+        <div class="derived-word">
+          <span class="arabic">كِتَاب</span>
+          <small>livre</small>
+        </div>
+        <div class="derived-word">
+          <span class="arabic">كَاتِب</span>
+          <small>écrivain</small>
+        </div>
+        <div class="derived-word">
+          <span class="arabic">مَكْتَبَة</span>
+          <small>bibliothèque</small>
+        </div>
+        <div class="derived-word">
+          <span class="arabic">مَكْتُوب</span>
+          <small>écrit / lettre</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>Astuce</h4>
+      <p>Quand tu apprends un nouveau verbe en arabe, identifie toujours ses 3 lettres racines. Une fois que tu reconnais la racine, tu peux deviner le sens de beaucoup de mots que tu n'as jamais vus.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: الماضي -->
+  <section id="madi">
+    <h2><span class="arabic">الماضي</span> Le passé (accompli)</h2>
+
+    <p>Le ماضي exprime une action terminée, accomplie. C'est le temps le plus simple en arabe et c'est aussi la forme de référence du verbe, comme l'infinitif en français. Quand on cherche un verbe dans le dictionnaire, on le trouve au ماضي, 3e personne masculin singulier.</p>
+
+    <div class="concept-box teal">
+      <h4>Le principe clé</h4>
+      <p>Au ماضي, la racine reste fixe et on ajoute des <span class="suffix">suffixes</span> (terminaisons) pour indiquer la personne. C'est similaire au français : j'ai mangé, tu as mangé, il a mangé, mais en arabe, tout est condensé en un seul mot.</p>
+    </div>
+
+    <h3>Conjugaison complète : choisir un verbe</h3>
+
+    <div class="verb-tabs" id="madi-tabs">
+      <div class="verb-tab active" data-verb="kataba"><span class="tab-arabic">كَتَبَ</span> écrire</div>
+      <div class="verb-tab" data-verb="dhahaba"><span class="tab-arabic">ذَهَبَ</span> aller</div>
+      <div class="verb-tab" data-verb="fataha"><span class="tab-arabic">فَتَحَ</span> ouvrir</div>
+      <div class="verb-tab" data-verb="jalasa"><span class="tab-arabic">جَلَسَ</span> s'asseoir</div>
+    </div>
+
+    <!-- كَتَبَ -->
+    <div class="verb-content active" id="madi-kataba">
+      <div class="conj-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pronom français</th>
+              <th class="ar">الضَّمِير</th>
+              <th class="ar">الماضي</th>
+              <th>Translitération</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="pronoun-fr">Il</td><td class="pronoun-ar">هُوَ</td><td class="verb-ar">كَتَبَ</td><td class="transliteration">kataba</td></tr>
+            <tr><td class="pronoun-fr">Elle</td><td class="pronoun-ar">هِيَ</td><td class="verb-ar">كَتَبَتْ</td><td class="transliteration">katabat</td></tr>
+            <tr><td class="pronoun-fr">Tu (masc.)</td><td class="pronoun-ar">أَنْتَ</td><td class="verb-ar">كَتَبْتَ</td><td class="transliteration">katabta</td></tr>
+            <tr><td class="pronoun-fr">Tu (fém.)</td><td class="pronoun-ar">أَنْتِ</td><td class="verb-ar">كَتَبْتِ</td><td class="transliteration">katabti</td></tr>
+            <tr><td class="pronoun-fr">Je</td><td class="pronoun-ar">أَنَا</td><td class="verb-ar">كَتَبْتُ</td><td class="transliteration">katabtu</td></tr>
+            <tr><td class="pronoun-fr">Ils</td><td class="pronoun-ar">هُمْ</td><td class="verb-ar">كَتَبُوا</td><td class="transliteration">katabū</td></tr>
+            <tr><td class="pronoun-fr">Elles</td><td class="pronoun-ar">هُنَّ</td><td class="verb-ar">كَتَبْنَ</td><td class="transliteration">katabna</td></tr>
+            <tr><td class="pronoun-fr">Vous (masc. pl.)</td><td class="pronoun-ar">أَنْتُمْ</td><td class="verb-ar">كَتَبْتُمْ</td><td class="transliteration">katabtum</td></tr>
+            <tr><td class="pronoun-fr">Vous (fém. pl.)</td><td class="pronoun-ar">أَنْتُنَّ</td><td class="verb-ar">كَتَبْتُنَّ</td><td class="transliteration">katabtunna</td></tr>
+            <tr><td class="pronoun-fr">Nous</td><td class="pronoun-ar">نَحْنُ</td><td class="verb-ar">كَتَبْنَا</td><td class="transliteration">katabnā</td></tr>
+            <tr><td class="pronoun-fr">Ils (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">كَتَبَا</td><td class="transliteration">katabā</td></tr>
+            <tr><td class="pronoun-fr">Elles (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">كَتَبَتَا</td><td class="transliteration">katabatā</td></tr>
+            <tr><td class="pronoun-fr">Vous (duel)</td><td class="pronoun-ar">أَنْتُمَا</td><td class="verb-ar">كَتَبْتُمَا</td><td class="transliteration">katabtumā</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ذَهَبَ -->
+    <div class="verb-content" id="madi-dhahaba">
+      <div class="conj-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pronom français</th>
+              <th class="ar">الضَّمِير</th>
+              <th class="ar">الماضي</th>
+              <th>Translitération</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="pronoun-fr">Il</td><td class="pronoun-ar">هُوَ</td><td class="verb-ar">ذَهَبَ</td><td class="transliteration">dhahaba</td></tr>
+            <tr><td class="pronoun-fr">Elle</td><td class="pronoun-ar">هِيَ</td><td class="verb-ar">ذَهَبَتْ</td><td class="transliteration">dhahabat</td></tr>
+            <tr><td class="pronoun-fr">Tu (masc.)</td><td class="pronoun-ar">أَنْتَ</td><td class="verb-ar">ذَهَبْتَ</td><td class="transliteration">dhahabta</td></tr>
+            <tr><td class="pronoun-fr">Tu (fém.)</td><td class="pronoun-ar">أَنْتِ</td><td class="verb-ar">ذَهَبْتِ</td><td class="transliteration">dhahabti</td></tr>
+            <tr><td class="pronoun-fr">Je</td><td class="pronoun-ar">أَنَا</td><td class="verb-ar">ذَهَبْتُ</td><td class="transliteration">dhahabtu</td></tr>
+            <tr><td class="pronoun-fr">Ils</td><td class="pronoun-ar">هُمْ</td><td class="verb-ar">ذَهَبُوا</td><td class="transliteration">dhahabū</td></tr>
+            <tr><td class="pronoun-fr">Elles</td><td class="pronoun-ar">هُنَّ</td><td class="verb-ar">ذَهَبْنَ</td><td class="transliteration">dhahabna</td></tr>
+            <tr><td class="pronoun-fr">Vous (masc. pl.)</td><td class="pronoun-ar">أَنْتُمْ</td><td class="verb-ar">ذَهَبْتُمْ</td><td class="transliteration">dhahabtum</td></tr>
+            <tr><td class="pronoun-fr">Vous (fém. pl.)</td><td class="pronoun-ar">أَنْتُنَّ</td><td class="verb-ar">ذَهَبْتُنَّ</td><td class="transliteration">dhahabtunna</td></tr>
+            <tr><td class="pronoun-fr">Nous</td><td class="pronoun-ar">نَحْنُ</td><td class="verb-ar">ذَهَبْنَا</td><td class="transliteration">dhahabnā</td></tr>
+            <tr><td class="pronoun-fr">Ils (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">ذَهَبَا</td><td class="transliteration">dhahabā</td></tr>
+            <tr><td class="pronoun-fr">Elles (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">ذَهَبَتَا</td><td class="transliteration">dhahabatā</td></tr>
+            <tr><td class="pronoun-fr">Vous (duel)</td><td class="pronoun-ar">أَنْتُمَا</td><td class="verb-ar">ذَهَبْتُمَا</td><td class="transliteration">dhahabtumā</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- فَتَحَ -->
+    <div class="verb-content" id="madi-fataha">
+      <div class="conj-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pronom français</th>
+              <th class="ar">الضَّمِير</th>
+              <th class="ar">الماضي</th>
+              <th>Translitération</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="pronoun-fr">Il</td><td class="pronoun-ar">هُوَ</td><td class="verb-ar">فَتَحَ</td><td class="transliteration">fataha</td></tr>
+            <tr><td class="pronoun-fr">Elle</td><td class="pronoun-ar">هِيَ</td><td class="verb-ar">فَتَحَتْ</td><td class="transliteration">fatahat</td></tr>
+            <tr><td class="pronoun-fr">Tu (masc.)</td><td class="pronoun-ar">أَنْتَ</td><td class="verb-ar">فَتَحْتَ</td><td class="transliteration">fatahta</td></tr>
+            <tr><td class="pronoun-fr">Tu (fém.)</td><td class="pronoun-ar">أَنْتِ</td><td class="verb-ar">فَتَحْتِ</td><td class="transliteration">fatahti</td></tr>
+            <tr><td class="pronoun-fr">Je</td><td class="pronoun-ar">أَنَا</td><td class="verb-ar">فَتَحْتُ</td><td class="transliteration">fatahtu</td></tr>
+            <tr><td class="pronoun-fr">Ils</td><td class="pronoun-ar">هُمْ</td><td class="verb-ar">فَتَحُوا</td><td class="transliteration">fatahū</td></tr>
+            <tr><td class="pronoun-fr">Elles</td><td class="pronoun-ar">هُنَّ</td><td class="verb-ar">فَتَحْنَ</td><td class="transliteration">fatahna</td></tr>
+            <tr><td class="pronoun-fr">Vous (masc. pl.)</td><td class="pronoun-ar">أَنْتُمْ</td><td class="verb-ar">فَتَحْتُمْ</td><td class="transliteration">fatahtum</td></tr>
+            <tr><td class="pronoun-fr">Vous (fém. pl.)</td><td class="pronoun-ar">أَنْتُنَّ</td><td class="verb-ar">فَتَحْتُنَّ</td><td class="transliteration">fatahtunna</td></tr>
+            <tr><td class="pronoun-fr">Nous</td><td class="pronoun-ar">نَحْنُ</td><td class="verb-ar">فَتَحْنَا</td><td class="transliteration">fatahnā</td></tr>
+            <tr><td class="pronoun-fr">Ils (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">فَتَحَا</td><td class="transliteration">fatahā</td></tr>
+            <tr><td class="pronoun-fr">Elles (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">فَتَحَتَا</td><td class="transliteration">fatahatā</td></tr>
+            <tr><td class="pronoun-fr">Vous (duel)</td><td class="pronoun-ar">أَنْتُمَا</td><td class="verb-ar">فَتَحْتُمَا</td><td class="transliteration">fatahtumā</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- جَلَسَ -->
+    <div class="verb-content" id="madi-jalasa">
+      <div class="conj-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pronom français</th>
+              <th class="ar">الضَّمِير</th>
+              <th class="ar">الماضي</th>
+              <th>Translitération</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="pronoun-fr">Il</td><td class="pronoun-ar">هُوَ</td><td class="verb-ar">جَلَسَ</td><td class="transliteration">jalasa</td></tr>
+            <tr><td class="pronoun-fr">Elle</td><td class="pronoun-ar">هِيَ</td><td class="verb-ar">جَلَسَتْ</td><td class="transliteration">jalasat</td></tr>
+            <tr><td class="pronoun-fr">Tu (masc.)</td><td class="pronoun-ar">أَنْتَ</td><td class="verb-ar">جَلَسْتَ</td><td class="transliteration">jalasta</td></tr>
+            <tr><td class="pronoun-fr">Tu (fém.)</td><td class="pronoun-ar">أَنْتِ</td><td class="verb-ar">جَلَسْتِ</td><td class="transliteration">jalasti</td></tr>
+            <tr><td class="pronoun-fr">Je</td><td class="pronoun-ar">أَنَا</td><td class="verb-ar">جَلَسْتُ</td><td class="transliteration">jalastu</td></tr>
+            <tr><td class="pronoun-fr">Ils</td><td class="pronoun-ar">هُمْ</td><td class="verb-ar">جَلَسُوا</td><td class="transliteration">jalasū</td></tr>
+            <tr><td class="pronoun-fr">Elles</td><td class="pronoun-ar">هُنَّ</td><td class="verb-ar">جَلَسْنَ</td><td class="transliteration">jalasna</td></tr>
+            <tr><td class="pronoun-fr">Vous (masc. pl.)</td><td class="pronoun-ar">أَنْتُمْ</td><td class="verb-ar">جَلَسْتُمْ</td><td class="transliteration">jalastum</td></tr>
+            <tr><td class="pronoun-fr">Vous (fém. pl.)</td><td class="pronoun-ar">أَنْتُنَّ</td><td class="verb-ar">جَلَسْتُنَّ</td><td class="transliteration">jalastunna</td></tr>
+            <tr><td class="pronoun-fr">Nous</td><td class="pronoun-ar">نَحْنُ</td><td class="verb-ar">جَلَسْنَا</td><td class="transliteration">jalasnā</td></tr>
+            <tr><td class="pronoun-fr">Ils (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">جَلَسَا</td><td class="transliteration">jalasā</td></tr>
+            <tr><td class="pronoun-fr">Elles (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">جَلَسَتَا</td><td class="transliteration">jalasatā</td></tr>
+            <tr><td class="pronoun-fr">Vous (duel)</td><td class="pronoun-ar">أَنْتُمَا</td><td class="verb-ar">جَلَسْتُمَا</td><td class="transliteration">jalastumā</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>Observe le pattern</h4>
+      <p>Regarde bien les 4 tableaux ci-dessus. Les suffixes sont toujours les mêmes, quel que soit le verbe! Seule la racine change. C'est ça la beauté du système arabe : une fois que tu maîtrises les terminaisons, tu peux conjuguer n'importe quel verbe régulier au ماضي.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: المضارع -->
+  <section id="mudari">
+    <h2><span class="arabic">المُضَارِع</span> Le présent-futur (inaccompli)</h2>
+
+    <p>Le المضارع exprime une action en cours ou habituelle (comme le présent en français), mais aussi une action future selon le contexte. C'est le temps le plus riche grammaticalement.</p>
+
+    <div class="concept-box teal">
+      <h4>La différence clé avec le ماضي</h4>
+      <p>Au ماضي, on ajoute des <span class="suffix">suffixes</span> (à la fin).<br>
+      Au المضارع, on ajoute des <span class="prefix">préfixes</span> (au début) : <span class="arabic" style="font-size:1.1em">يـ ، تـ ، أ ، نـ</span><br>
+      Et parfois aussi des suffixes en même temps!</p>
+    </div>
+
+    <h3>La voyelle variable du المضارع</h3>
+    <p>Quand on passe du ماضي au المضارع, la voyelle de la 2e lettre racine peut changer. Il y a trois possibilités, et il faut les apprendre avec chaque verbe :</p>
+
+    <div class="vowel-patterns">
+      <div class="vowel-row">
+        <span class="meaning-small">écrire</span>
+        <span class="verb-pair">كَتَبَ</span>
+        <span class="arrow">→</span>
+        <span class="verb-pair">يَكْتُبُ</span>
+        <span class="vowel-name">ضمّة (u)</span>
+      </div>
+      <div class="vowel-row">
+        <span class="meaning-small">ouvrir</span>
+        <span class="verb-pair">فَتَحَ</span>
+        <span class="arrow">→</span>
+        <span class="verb-pair">يَفْتَحُ</span>
+        <span class="vowel-name">فتحة (a)</span>
+      </div>
+      <div class="vowel-row">
+        <span class="meaning-small">s'asseoir</span>
+        <span class="verb-pair">جَلَسَ</span>
+        <span class="arrow">→</span>
+        <span class="verb-pair">يَجْلِسُ</span>
+        <span class="vowel-name">كسرة (i)</span>
+      </div>
+    </div>
+
+    <h3>Conjugaison complète : choisir un verbe</h3>
+
+    <div class="verb-tabs" id="mudari-tabs">
+      <div class="verb-tab active" data-verb="yaktubu"><span class="tab-arabic">يَكْتُبُ</span> écrire</div>
+      <div class="verb-tab" data-verb="yadhhabu"><span class="tab-arabic">يَذْهَبُ</span> aller</div>
+      <div class="verb-tab" data-verb="yaftahu"><span class="tab-arabic">يَفْتَحُ</span> ouvrir</div>
+      <div class="verb-tab" data-verb="yajlisu"><span class="tab-arabic">يَجْلِسُ</span> s'asseoir</div>
+    </div>
+
+    <!-- يَكْتُبُ -->
+    <div class="verb-content active" id="mudari-yaktubu">
+      <div class="conj-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pronom français</th>
+              <th class="ar">الضَّمِير</th>
+              <th class="ar">المُضَارِع</th>
+              <th>Translitération</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="pronoun-fr">Il</td><td class="pronoun-ar">هُوَ</td><td class="verb-ar">يَكْتُبُ</td><td class="transliteration">yaktubu</td></tr>
+            <tr><td class="pronoun-fr">Elle</td><td class="pronoun-ar">هِيَ</td><td class="verb-ar">تَكْتُبُ</td><td class="transliteration">taktubu</td></tr>
+            <tr><td class="pronoun-fr">Tu (masc.)</td><td class="pronoun-ar">أَنْتَ</td><td class="verb-ar">تَكْتُبُ</td><td class="transliteration">taktubu</td></tr>
+            <tr><td class="pronoun-fr">Tu (fém.)</td><td class="pronoun-ar">أَنْتِ</td><td class="verb-ar">تَكْتُبِينَ</td><td class="transliteration">taktubīna</td></tr>
+            <tr><td class="pronoun-fr">Je</td><td class="pronoun-ar">أَنَا</td><td class="verb-ar">أَكْتُبُ</td><td class="transliteration">aktubu</td></tr>
+            <tr><td class="pronoun-fr">Ils</td><td class="pronoun-ar">هُمْ</td><td class="verb-ar">يَكْتُبُونَ</td><td class="transliteration">yaktubūna</td></tr>
+            <tr><td class="pronoun-fr">Elles</td><td class="pronoun-ar">هُنَّ</td><td class="verb-ar">يَكْتُبْنَ</td><td class="transliteration">yaktubna</td></tr>
+            <tr><td class="pronoun-fr">Vous (masc. pl.)</td><td class="pronoun-ar">أَنْتُمْ</td><td class="verb-ar">تَكْتُبُونَ</td><td class="transliteration">taktubūna</td></tr>
+            <tr><td class="pronoun-fr">Vous (fém. pl.)</td><td class="pronoun-ar">أَنْتُنَّ</td><td class="verb-ar">تَكْتُبْنَ</td><td class="transliteration">taktubna</td></tr>
+            <tr><td class="pronoun-fr">Nous</td><td class="pronoun-ar">نَحْنُ</td><td class="verb-ar">نَكْتُبُ</td><td class="transliteration">naktubu</td></tr>
+            <tr><td class="pronoun-fr">Ils (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">يَكْتُبَانِ</td><td class="transliteration">yaktubāni</td></tr>
+            <tr><td class="pronoun-fr">Elles (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">تَكْتُبَانِ</td><td class="transliteration">taktubāni</td></tr>
+            <tr><td class="pronoun-fr">Vous (duel)</td><td class="pronoun-ar">أَنْتُمَا</td><td class="verb-ar">تَكْتُبَانِ</td><td class="transliteration">taktubāni</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- يَذْهَبُ -->
+    <div class="verb-content" id="mudari-yadhhabu">
+      <div class="conj-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pronom français</th>
+              <th class="ar">الضَّمِير</th>
+              <th class="ar">المُضَارِع</th>
+              <th>Translitération</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="pronoun-fr">Il</td><td class="pronoun-ar">هُوَ</td><td class="verb-ar">يَذْهَبُ</td><td class="transliteration">yadhhabu</td></tr>
+            <tr><td class="pronoun-fr">Elle</td><td class="pronoun-ar">هِيَ</td><td class="verb-ar">تَذْهَبُ</td><td class="transliteration">tadhhabu</td></tr>
+            <tr><td class="pronoun-fr">Tu (masc.)</td><td class="pronoun-ar">أَنْتَ</td><td class="verb-ar">تَذْهَبُ</td><td class="transliteration">tadhhabu</td></tr>
+            <tr><td class="pronoun-fr">Tu (fém.)</td><td class="pronoun-ar">أَنْتِ</td><td class="verb-ar">تَذْهَبِينَ</td><td class="transliteration">tadhhbīna</td></tr>
+            <tr><td class="pronoun-fr">Je</td><td class="pronoun-ar">أَنَا</td><td class="verb-ar">أَذْهَبُ</td><td class="transliteration">adhhabu</td></tr>
+            <tr><td class="pronoun-fr">Ils</td><td class="pronoun-ar">هُمْ</td><td class="verb-ar">يَذْهَبُونَ</td><td class="transliteration">yadhhbūna</td></tr>
+            <tr><td class="pronoun-fr">Elles</td><td class="pronoun-ar">هُنَّ</td><td class="verb-ar">يَذْهَبْنَ</td><td class="transliteration">yadhhabna</td></tr>
+            <tr><td class="pronoun-fr">Vous (masc. pl.)</td><td class="pronoun-ar">أَنْتُمْ</td><td class="verb-ar">تَذْهَبُونَ</td><td class="transliteration">tadhhbūna</td></tr>
+            <tr><td class="pronoun-fr">Vous (fém. pl.)</td><td class="pronoun-ar">أَنْتُنَّ</td><td class="verb-ar">تَذْهَبْنَ</td><td class="transliteration">tadhhabna</td></tr>
+            <tr><td class="pronoun-fr">Nous</td><td class="pronoun-ar">نَحْنُ</td><td class="verb-ar">نَذْهَبُ</td><td class="transliteration">nadhhabu</td></tr>
+            <tr><td class="pronoun-fr">Ils (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">يَذْهَبَانِ</td><td class="transliteration">yadhhbāni</td></tr>
+            <tr><td class="pronoun-fr">Elles (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">تَذْهَبَانِ</td><td class="transliteration">tadhhbāni</td></tr>
+            <tr><td class="pronoun-fr">Vous (duel)</td><td class="pronoun-ar">أَنْتُمَا</td><td class="verb-ar">تَذْهَبَانِ</td><td class="transliteration">tadhhbāni</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- يَفْتَحُ -->
+    <div class="verb-content" id="mudari-yaftahu">
+      <div class="conj-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pronom français</th>
+              <th class="ar">الضَّمِير</th>
+              <th class="ar">المُضَارِع</th>
+              <th>Translitération</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="pronoun-fr">Il</td><td class="pronoun-ar">هُوَ</td><td class="verb-ar">يَفْتَحُ</td><td class="transliteration">yaftahu</td></tr>
+            <tr><td class="pronoun-fr">Elle</td><td class="pronoun-ar">هِيَ</td><td class="verb-ar">تَفْتَحُ</td><td class="transliteration">taftahu</td></tr>
+            <tr><td class="pronoun-fr">Tu (masc.)</td><td class="pronoun-ar">أَنْتَ</td><td class="verb-ar">تَفْتَحُ</td><td class="transliteration">taftahu</td></tr>
+            <tr><td class="pronoun-fr">Tu (fém.)</td><td class="pronoun-ar">أَنْتِ</td><td class="verb-ar">تَفْتَحِينَ</td><td class="transliteration">taftahīna</td></tr>
+            <tr><td class="pronoun-fr">Je</td><td class="pronoun-ar">أَنَا</td><td class="verb-ar">أَفْتَحُ</td><td class="transliteration">aftahu</td></tr>
+            <tr><td class="pronoun-fr">Ils</td><td class="pronoun-ar">هُمْ</td><td class="verb-ar">يَفْتَحُونَ</td><td class="transliteration">yaftahūna</td></tr>
+            <tr><td class="pronoun-fr">Elles</td><td class="pronoun-ar">هُنَّ</td><td class="verb-ar">يَفْتَحْنَ</td><td class="transliteration">yaftahna</td></tr>
+            <tr><td class="pronoun-fr">Vous (masc. pl.)</td><td class="pronoun-ar">أَنْتُمْ</td><td class="verb-ar">تَفْتَحُونَ</td><td class="transliteration">taftahūna</td></tr>
+            <tr><td class="pronoun-fr">Vous (fém. pl.)</td><td class="pronoun-ar">أَنْتُنَّ</td><td class="verb-ar">تَفْتَحْنَ</td><td class="transliteration">taftahna</td></tr>
+            <tr><td class="pronoun-fr">Nous</td><td class="pronoun-ar">نَحْنُ</td><td class="verb-ar">نَفْتَحُ</td><td class="transliteration">naftahu</td></tr>
+            <tr><td class="pronoun-fr">Ils (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">يَفْتَحَانِ</td><td class="transliteration">yaftahāni</td></tr>
+            <tr><td class="pronoun-fr">Elles (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">تَفْتَحَانِ</td><td class="transliteration">taftahāni</td></tr>
+            <tr><td class="pronoun-fr">Vous (duel)</td><td class="pronoun-ar">أَنْتُمَا</td><td class="verb-ar">تَفْتَحَانِ</td><td class="transliteration">taftahāni</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- يَجْلِسُ -->
+    <div class="verb-content" id="mudari-yajlisu">
+      <div class="conj-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pronom français</th>
+              <th class="ar">الضَّمِير</th>
+              <th class="ar">المُضَارِع</th>
+              <th>Translitération</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="pronoun-fr">Il</td><td class="pronoun-ar">هُوَ</td><td class="verb-ar">يَجْلِسُ</td><td class="transliteration">yajlisu</td></tr>
+            <tr><td class="pronoun-fr">Elle</td><td class="pronoun-ar">هِيَ</td><td class="verb-ar">تَجْلِسُ</td><td class="transliteration">tajlisu</td></tr>
+            <tr><td class="pronoun-fr">Tu (masc.)</td><td class="pronoun-ar">أَنْتَ</td><td class="verb-ar">تَجْلِسُ</td><td class="transliteration">tajlisu</td></tr>
+            <tr><td class="pronoun-fr">Tu (fém.)</td><td class="pronoun-ar">أَنْتِ</td><td class="verb-ar">تَجْلِسِينَ</td><td class="transliteration">tajlisīna</td></tr>
+            <tr><td class="pronoun-fr">Je</td><td class="pronoun-ar">أَنَا</td><td class="verb-ar">أَجْلِسُ</td><td class="transliteration">ajlisu</td></tr>
+            <tr><td class="pronoun-fr">Ils</td><td class="pronoun-ar">هُمْ</td><td class="verb-ar">يَجْلِسُونَ</td><td class="transliteration">yajlisūna</td></tr>
+            <tr><td class="pronoun-fr">Elles</td><td class="pronoun-ar">هُنَّ</td><td class="verb-ar">يَجْلِسْنَ</td><td class="transliteration">yajlisna</td></tr>
+            <tr><td class="pronoun-fr">Vous (masc. pl.)</td><td class="pronoun-ar">أَنْتُمْ</td><td class="verb-ar">تَجْلِسُونَ</td><td class="transliteration">tajlisūna</td></tr>
+            <tr><td class="pronoun-fr">Vous (fém. pl.)</td><td class="pronoun-ar">أَنْتُنَّ</td><td class="verb-ar">تَجْلِسْنَ</td><td class="transliteration">tajlisna</td></tr>
+            <tr><td class="pronoun-fr">Nous</td><td class="pronoun-ar">نَحْنُ</td><td class="verb-ar">نَجْلِسُ</td><td class="transliteration">najlisu</td></tr>
+            <tr><td class="pronoun-fr">Ils (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">يَجْلِسَانِ</td><td class="transliteration">yajlisāni</td></tr>
+            <tr><td class="pronoun-fr">Elles (duel)</td><td class="pronoun-ar">هُمَا</td><td class="verb-ar">تَجْلِسَانِ</td><td class="transliteration">tajlisāni</td></tr>
+            <tr><td class="pronoun-fr">Vous (duel)</td><td class="pronoun-ar">أَنْتُمَا</td><td class="verb-ar">تَجْلِسَانِ</td><td class="transliteration">tajlisāni</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>Exprimer le futur</h4>
+      <p>Le المضارع couvre aussi le futur. Pour préciser qu'on parle du futur, on ajoute :</p>
+      <p><span class="arabic-large">سَـ</span> (sa) pour le futur proche : <span class="arabic">سَيَكْتُبُ</span> = il écrira (bientôt)</p>
+      <p><span class="arabic-large">سَوْفَ</span> (sawfa) pour le futur lointain : <span class="arabic">سَوْفَ يَكْتُبُ</span> = il écrira (un jour)</p>
+    </div>
+  </section>
+
+  <!-- SECTION 4: COMPARER -->
+  <section id="comparer">
+    <h2>Comparer les deux temps</h2>
+
+    <div class="comparison">
+      <div class="comparison-col past">
+        <div class="label">الماضي : le passé</div>
+        <h4>كَتَبَ</h4>
+        <div class="meaning">il a écrit</div>
+        <div class="example" style="margin-top:1rem">كَتَبَ الوَلَدُ رِسَالَةً</div>
+        <div class="meaning">Le garçon a écrit une lettre</div>
+      </div>
+      <div class="comparison-col present">
+        <div class="label">المضارع : le présent</div>
+        <h4>يَكْتُبُ</h4>
+        <div class="meaning">il écrit</div>
+        <div class="example" style="margin-top:1rem">يَكْتُبُ الوَلَدُ رِسَالَةً</div>
+        <div class="meaning">Le garçon écrit une lettre</div>
+      </div>
+    </div>
+
+    <div class="concept-box teal">
+      <h4>Résumé des mécanismes</h4>
+      <table class="summary-table">
+        <thead>
+          <tr><th>Aspect</th><th>الماضي</th><th>المضارع</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Modification</td><td>Suffixes (fin)</td><td>Préfixes (début) + suffixes</td></tr>
+          <tr><td>Sens</td><td>Action accomplie</td><td>Action en cours / future</td></tr>
+          <tr><td>Difficulté</td><td>Plus simple</td><td>Voyelle variable à mémoriser</td></tr>
+          <tr><td>Équivalent FR</td><td>Passé composé / simple</td><td>Présent / futur</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PHRASES -->
+  <section id="phrases">
+    <h2>Exemples en contexte</h2>
+
+    <h3>Au ماضي (passé)</h3>
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">ذَهَبْتُ إلى المَدْرَسَةِ</div>
+        <div class="fr-line">Je suis allé(e) à l'école</div>
+        <div class="note">ذَهَبْتُ = ذَهَبَ + تُ (suffixe de « je »)</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">فَتَحَتِ الأُمُّ البَابَ</div>
+        <div class="fr-line">La mère a ouvert la porte</div>
+        <div class="note">فَتَحَتْ = فَتَحَ + تْ (suffixe de « elle »)</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">جَلَسْنَا فِي الحَدِيقَةِ</div>
+        <div class="fr-line">Nous nous sommes assis dans le jardin</div>
+        <div class="note">جَلَسْنَا = جَلَسَ + نَا (suffixe de « nous »)</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">كَتَبُوا الدَّرْسَ</div>
+        <div class="fr-line">Ils ont écrit la leçon</div>
+        <div class="note">كَتَبُوا = كَتَبَ + وا (suffixe de « ils »)</div>
+      </div>
+    </div>
+
+    <h3>Au المضارع (présent)</h3>
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">أَذْهَبُ إلى الجَامِعَةِ كُلَّ يَوْمٍ</div>
+        <div class="fr-line">Je vais à l'université chaque jour</div>
+        <div class="note">أَذْهَبُ = أ (préfixe de « je ») + ذْهَبُ</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">تَفْتَحُ المُعَلِّمَةُ الكِتَابَ</div>
+        <div class="fr-line">L'enseignante ouvre le livre</div>
+        <div class="note">تَفْتَحُ = تـ (préfixe de « elle ») + فْتَحُ</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">نَجْلِسُ مَعًا فِي المَكْتَبَةِ</div>
+        <div class="fr-line">Nous nous asseyons ensemble à la bibliothèque</div>
+        <div class="note">نَجْلِسُ = نـ (préfixe de « nous ») + جْلِسُ</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">سَيَكْتُبُونَ الامْتِحَانَ غَدًا</div>
+        <div class="fr-line">Ils écriront l'examen demain</div>
+        <div class="note">سَـ + يَكْتُبُونَ = futur proche de « ils écrivent »</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: QUIZ -->
+  <section id="quiz">
+    <h2>Quiz interactif</h2>
+    <p>Teste ta compréhension! Identifie la bonne conjugaison pour chaque question.</p>
+
+    <div class="score-display">
+      Score : <strong><span id="score">0</span> / <span id="total">0</span></strong>
+    </div>
+
+    <div class="quiz-area" id="quiz-area">
+      <div class="quiz-prompt">
+        <div class="context" id="quiz-context"></div>
+        <div class="question-verb" id="quiz-verb"></div>
+        <div class="question-info" id="quiz-info"></div>
+      </div>
+      <div class="quiz-options" id="quiz-options"></div>
+      <div class="quiz-feedback" id="quiz-feedback"></div>
+      <div class="quiz-controls">
+        <button class="btn" id="next-btn">Question suivante →</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Créé avec soin pour l'apprentissage de l'arabe</p>
+  <p style="font-family:'Amiri',serif; font-size:1.2em; margin-top:0.5rem; direction:rtl;">بالتوفيق والنجاح</p>
+</footer>
+
+</BaseLayout>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #faf7f2;
+    --bg-card: #ffffff;
+    --bg-dark: #1a1a2e;
+    --accent: #c4873b;
+    --accent-light: #f5e6d0;
+    --accent-dark: #8b5e2a;
+    --teal: #2a7a6e;
+    --teal-light: #e0f2ef;
+    --text: #2c2c2c;
+    --text-light: #6b6b6b;
+    --text-arabic: #1a1a2e;
+    --border: #e8e0d4;
+    --shadow: 0 2px 20px rgba(0,0,0,0.06);
+    --shadow-hover: 0 4px 30px rgba(0,0,0,0.1);
+    --radius: 12px;
+    --correct: #2a7a4e;
+    --correct-bg: #e8f5ec;
+    --wrong: #b83b3b;
+    --wrong-bg: #fce8e8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Lora', Georgia, serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .arabic {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+    font-size: 1.3em;
+    color: var(--text-arabic);
+    line-height: 2;
+  }
+
+  .arabic-large {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+    font-size: 2em;
+    color: var(--text-arabic);
+    line-height: 1.8;
+  }
+
+  .arabic-xl {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+    font-size: 2.8em;
+    color: var(--text-arabic);
+    line-height: 1.6;
+  }
+
+  .transliteration {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  /* Header */
+  header {
+    background: var(--bg-dark);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: 'بسم الله الرحمن الرحيم';
+    font-family: 'Amiri', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    opacity: 0.03;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  header h1 {
+    font-family: 'Amiri', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    direction: rtl;
+    color: var(--accent);
+  }
+
+  header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    max-width: 500px;
+    margin: 0.5rem auto 0;
+  }
+
+  /* Navigation */
+  nav {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover, nav a.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* Main */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+    animation: fadeIn 0.6s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    color: var(--accent-dark);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-light);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  h2 .arabic {
+    font-size: 1.4em;
+    color: var(--accent-dark);
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    color: var(--teal);
+    margin: 1.5rem 0 0.8rem;
+  }
+
+  p { margin-bottom: 1rem; }
+
+  /* Concept Box */
+  .concept-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+
+  .concept-box.highlight {
+    border-left: 4px solid var(--accent);
+  }
+
+  .concept-box.teal {
+    border-left: 4px solid var(--teal);
+  }
+
+  .concept-box h4 {
+    font-size: 1rem;
+    color: var(--accent-dark);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Root System Visual */
+  .root-demo {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--accent-light) 0%, #fff 100%);
+    border-radius: var(--radius);
+    margin: 1.5rem 0;
+  }
+
+  .root-letters {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    direction: rtl;
+    margin-bottom: 1rem;
+  }
+
+  .root-letter {
+    font-family: 'Amiri', serif;
+    font-size: 3.5rem;
+    color: var(--accent-dark);
+    background: var(--bg-card);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 3px 15px rgba(196,135,59,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .root-letter:hover {
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  .root-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+  }
+
+  .derived-words {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .derived-word {
+    background: var(--bg-card);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .derived-word:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .derived-word .arabic {
+    display: block;
+    font-size: 1.4em;
+  }
+
+  .derived-word small {
+    color: var(--text-light);
+    font-size: 0.8em;
+  }
+
+  /* Conjugation Table */
+  .conj-table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    font-size: 0.95rem;
+  }
+
+  thead {
+    background: var(--bg-dark);
+    color: #fff;
+  }
+
+  thead th {
+    padding: 1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  thead th.ar {
+    font-family: 'Amiri', serif;
+    font-size: 1.3em;
+    direction: rtl;
+  }
+
+  tbody td {
+    padding: 0.8rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s ease;
+  }
+
+  tbody tr:hover td {
+    background: var(--accent-light);
+  }
+
+  tbody td.pronoun-fr {
+    font-weight: 600;
+    color: var(--text-light);
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  tbody td.pronoun-ar {
+    font-family: 'Amiri', serif;
+    font-size: 1.3em;
+    direction: rtl;
+    color: var(--teal);
+  }
+
+  tbody td.verb-ar {
+    font-family: 'Amiri', serif;
+    font-size: 1.4em;
+    direction: rtl;
+    color: var(--text-arabic);
+    font-weight: 700;
+  }
+
+  tbody td .transliteration {
+    display: block;
+    font-size: 0.75em;
+    margin-top: 2px;
+  }
+
+  /* Pattern highlight */
+  .prefix { color: var(--accent); font-weight: 700; }
+  .suffix { color: var(--teal); font-weight: 700; }
+  .root-highlight { color: var(--text-arabic); }
+
+  /* Tabs */
+  .verb-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .verb-tab {
+    padding: 0.6rem 1.2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .verb-tab:hover {
+    border-color: var(--accent);
+    background: var(--accent-light);
+  }
+
+  .verb-tab.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  .verb-tab .tab-arabic {
+    font-family: 'Amiri', serif;
+    font-size: 1.2em;
+  }
+
+  .verb-content { display: none; }
+  .verb-content.active { display: block; }
+
+  /* Quiz Section */
+  .quiz-area {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow);
+  }
+
+  .quiz-prompt {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .quiz-prompt .context {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .quiz-prompt .question-verb {
+    font-family: 'Amiri', serif;
+    font-size: 2.2rem;
+    color: var(--text-arabic);
+    direction: rtl;
+  }
+
+  .quiz-prompt .question-info {
+    font-size: 1rem;
+    color: var(--accent-dark);
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+
+  .quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .quiz-option {
+    padding: 1rem;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+    font-family: 'Amiri', serif;
+    font-size: 1.4rem;
+    direction: rtl;
+  }
+
+  .quiz-option:hover:not(.disabled) {
+    border-color: var(--accent);
+    background: var(--accent-light);
+    transform: translateY(-1px);
+  }
+
+  .quiz-option.correct {
+    border-color: var(--correct);
+    background: var(--correct-bg);
+    color: var(--correct);
+  }
+
+  .quiz-option.wrong {
+    border-color: var(--wrong);
+    background: var(--wrong-bg);
+    color: var(--wrong);
+  }
+
+  .quiz-option.disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+
+  .quiz-feedback {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: none;
+    font-size: 0.95rem;
+  }
+
+  .quiz-feedback.show { display: block; }
+  .quiz-feedback.correct { background: var(--correct-bg); color: var(--correct); }
+  .quiz-feedback.wrong { background: var(--wrong-bg); color: var(--wrong); }
+
+  .quiz-controls {
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.7rem 2rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn:hover {
+    background: var(--accent-dark);
+    transform: translateY(-1px);
+  }
+
+  .score-display {
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+  }
+
+  .score-display strong {
+    color: var(--teal);
+    font-size: 1.1em;
+  }
+
+  /* Sentence builder */
+  .sentence-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .sentence-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    transition: transform 0.2s ease;
+  }
+
+  .sentence-card:hover {
+    transform: translateX(4px);
+  }
+
+  .sentence-card .ar-line {
+    font-family: 'Amiri', serif;
+    font-size: 1.5rem;
+    direction: rtl;
+    text-align: right;
+    color: var(--text-arabic);
+  }
+
+  .sentence-card .fr-line {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  .sentence-card .note {
+    font-size: 0.8rem;
+    color: var(--accent-dark);
+    background: var(--accent-light);
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-top: 0.3rem;
+    width: fit-content;
+  }
+
+  /* Comparison Box */
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .comparison-col {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .comparison-col h4 {
+    font-family: 'Amiri', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    direction: rtl;
+  }
+
+  .comparison-col.past { border-top: 4px solid var(--teal); }
+  .comparison-col.present { border-top: 4px solid var(--accent); }
+
+  .comparison-col .label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.8rem;
+  }
+
+  .comparison-col .example {
+    font-family: 'Amiri', serif;
+    font-size: 1.6rem;
+    direction: rtl;
+    margin: 0.5rem 0;
+  }
+
+  .comparison-col .meaning {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  /* Summary table inside concept box */
+  .summary-table {
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .summary-table thead {
+    background: var(--teal);
+    color: #fff;
+  }
+
+  .summary-table th,
+  .summary-table td {
+    padding: 0.6rem;
+    text-align: center;
+  }
+
+  /* Vowel pattern display */
+  .vowel-patterns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1rem 0;
+  }
+
+  .vowel-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    background: var(--bg-card);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+
+  .vowel-row .verb-pair {
+    font-family: 'Amiri', serif;
+    font-size: 1.4rem;
+    direction: rtl;
+    flex: 1;
+    text-align: center;
+  }
+
+  .vowel-row .arrow {
+    color: var(--accent);
+    font-size: 1.2rem;
+  }
+
+  .vowel-row .vowel-name {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    background: var(--teal-light);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .vowel-row .meaning-small {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    min-width: 80px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    .root-letters { gap: 1rem; }
+    .root-letter { width: 60px; height: 60px; font-size: 2.5rem; }
+    .comparison { grid-template-columns: 1fr; }
+    .quiz-options { grid-template-columns: 1fr; }
+    nav a { padding: 0.8rem 1rem; font-size: 0.85rem; }
+    main { padding: 1.5rem 1rem 3rem; }
+  }
+</style>
+
+<script>
+  // Tab switching for verb tables
+  function setupTabs(tabContainerId: string, contentPrefix: string) {
+    const tabs = document.querySelectorAll(`#${tabContainerId} .verb-tab`);
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const verb = (tab as HTMLElement).dataset.verb;
+        document.querySelectorAll(`[id^="${contentPrefix}-"]`).forEach(c => c.classList.remove('active'));
+        document.getElementById(`${contentPrefix}-${verb}`)!.classList.add('active');
+      });
+    });
+  }
+
+  setupTabs('madi-tabs', 'madi');
+  setupTabs('mudari-tabs', 'mudari');
+
+  // Smooth scroll for nav
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href')!);
+      target!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+
+  // Active nav on scroll
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    let current = '';
+    sections.forEach(section => {
+      const top = section.offsetTop - 100;
+      if (window.scrollY >= top) current = section.id;
+    });
+    document.querySelectorAll('nav a').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+    });
+  });
+
+  // Quiz System
+  const quizQuestions = [
+    {
+      context: "Conjugue au ماضي",
+      verb: "كَتَبَ",
+      info: "Pronom : أَنَا (je)",
+      correct: "كَتَبْتُ",
+      options: ["كَتَبْتُ", "كَتَبْتَ", "أَكْتُبُ", "كَتَبَتْ"],
+      explanation: "أَنَا au ماضي prend le suffixe ـتُ"
+    },
+    {
+      context: "Conjugue au المضارع",
+      verb: "كَتَبَ",
+      info: "Pronom : هُوَ (il)",
+      correct: "يَكْتُبُ",
+      options: ["يَكْتُبُ", "تَكْتُبُ", "أَكْتُبُ", "كَتَبَ"],
+      explanation: "هُوَ au المضارع prend le préfixe يـ"
+    },
+    {
+      context: "Conjugue au ماضي",
+      verb: "ذَهَبَ",
+      info: "Pronom : هِيَ (elle)",
+      correct: "ذَهَبَتْ",
+      options: ["ذَهَبَتْ", "ذَهَبَ", "تَذْهَبُ", "ذَهَبْتُ"],
+      explanation: "هِيَ au ماضي prend le suffixe ـتْ"
+    },
+    {
+      context: "Conjugue au المضارع",
+      verb: "جَلَسَ",
+      info: "Pronom : نَحْنُ (nous)",
+      correct: "نَجْلِسُ",
+      options: ["نَجْلِسُ", "يَجْلِسُ", "جَلَسْنَا", "تَجْلِسُ"],
+      explanation: "نَحْنُ au المضارع prend le préfixe نـ"
+    },
+    {
+      context: "Conjugue au ماضي",
+      verb: "فَتَحَ",
+      info: "Pronom : هُمْ (ils)",
+      correct: "فَتَحُوا",
+      options: ["فَتَحُوا", "يَفْتَحُونَ", "فَتَحْنَا", "فَتَحَ"],
+      explanation: "هُمْ au ماضي prend le suffixe ـوا"
+    },
+    {
+      context: "Conjugue au المضارع",
+      verb: "فَتَحَ",
+      info: "Pronom : أَنْتِ (tu, fém.)",
+      correct: "تَفْتَحِينَ",
+      options: ["تَفْتَحِينَ", "تَفْتَحُ", "فَتَحْتِ", "يَفْتَحُ"],
+      explanation: "أَنْتِ au المضارع prend le préfixe تـ et le suffixe ـينَ"
+    },
+    {
+      context: "Conjugue au ماضي",
+      verb: "كَتَبَ",
+      info: "Pronom : نَحْنُ (nous)",
+      correct: "كَتَبْنَا",
+      options: ["كَتَبْنَا", "نَكْتُبُ", "كَتَبُوا", "كَتَبْتُمْ"],
+      explanation: "نَحْنُ au ماضي prend le suffixe ـنَا"
+    },
+    {
+      context: "Conjugue au المضارع",
+      verb: "ذَهَبَ",
+      info: "Pronom : أَنَا (je)",
+      correct: "أَذْهَبُ",
+      options: ["أَذْهَبُ", "يَذْهَبُ", "ذَهَبْتُ", "نَذْهَبُ"],
+      explanation: "أَنَا au المضارع prend le préfixe أ"
+    },
+    {
+      context: "Quel est le temps de ce verbe ?",
+      verb: "يَجْلِسُونَ",
+      info: "ماضي ou مضارع ?",
+      correct: "المضارع",
+      options: ["المضارع", "الماضي"],
+      explanation: "Le préfixe يـ et le suffixe ـونَ indiquent le المضارع (ils)"
+    },
+    {
+      context: "Quel est le temps de ce verbe ?",
+      verb: "فَتَحْتُمْ",
+      info: "ماضي ou مضارع ?",
+      correct: "الماضي",
+      options: ["الماضي", "المضارع"],
+      explanation: "Le suffixe ـتُمْ sans préfixe indique le ماضي (vous, masc. pl.)"
+    },
+    {
+      context: "Conjugue au المضارع",
+      verb: "جَلَسَ",
+      info: "Pronom : هُمْ (ils)",
+      correct: "يَجْلِسُونَ",
+      options: ["يَجْلِسُونَ", "جَلَسُوا", "تَجْلِسُونَ", "يَجْلِسُ"],
+      explanation: "هُمْ au المضارع prend le préfixe يـ et le suffixe ـونَ"
+    },
+    {
+      context: "Conjugue au ماضي",
+      verb: "ذَهَبَ",
+      info: "Pronom : أَنْتَ (tu, masc.)",
+      correct: "ذَهَبْتَ",
+      options: ["ذَهَبْتَ", "ذَهَبْتِ", "تَذْهَبُ", "ذَهَبَ"],
+      explanation: "أَنْتَ au ماضي prend le suffixe ـتَ (avec fatḥa)"
+    },
+  ];
+
+  let currentQuestion = 0;
+  let score = 0;
+  let totalAnswered = 0;
+  let shuffledQuestions: typeof quizQuestions = [];
+
+  function shuffleArray<T>(arr: T[]): T[] {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function loadQuestion() {
+    if (currentQuestion >= shuffledQuestions.length) {
+      shuffledQuestions = shuffleArray(quizQuestions);
+      currentQuestion = 0;
+    }
+
+    const q = shuffledQuestions[currentQuestion];
+    document.getElementById('quiz-context')!.textContent = q.context;
+    document.getElementById('quiz-verb')!.textContent = q.verb;
+    document.getElementById('quiz-info')!.textContent = q.info;
+
+    const optionsDiv = document.getElementById('quiz-options')!;
+    optionsDiv.innerHTML = '';
+
+    const shuffledOptions = shuffleArray(q.options);
+    shuffledOptions.forEach(opt => {
+      const btn = document.createElement('div');
+      btn.className = 'quiz-option';
+      btn.textContent = opt;
+      btn.addEventListener('click', () => checkAnswer(btn, opt, q));
+      optionsDiv.appendChild(btn);
+    });
+
+    document.getElementById('quiz-feedback')!.className = 'quiz-feedback';
+    document.getElementById('quiz-feedback')!.style.display = 'none';
+    document.getElementById('next-btn')!.style.display = 'none';
+  }
+
+  function checkAnswer(btn: HTMLElement, selected: string, question: typeof quizQuestions[0]) {
+    const options = document.querySelectorAll('.quiz-option');
+    options.forEach(o => o.classList.add('disabled'));
+
+    totalAnswered++;
+    const feedback = document.getElementById('quiz-feedback')!;
+
+    if (selected === question.correct) {
+      score++;
+      btn.classList.add('correct');
+      feedback.className = 'quiz-feedback show correct';
+      feedback.innerHTML = `Correct! ${question.explanation}`;
+    } else {
+      btn.classList.add('wrong');
+      options.forEach(o => {
+        if (o.textContent === question.correct) o.classList.add('correct');
+      });
+      feedback.className = 'quiz-feedback show wrong';
+      feedback.innerHTML = `La bonne réponse était <strong>${question.correct}</strong>. ${question.explanation}`;
+    }
+
+    document.getElementById('score')!.textContent = String(score);
+    document.getElementById('total')!.textContent = String(totalAnswered);
+    document.getElementById('next-btn')!.style.display = 'inline-block';
+  }
+
+  function nextQuestion() {
+    currentQuestion++;
+    loadQuestion();
+  }
+
+  // Wire up next button
+  document.getElementById('next-btn')!.addEventListener('click', nextQuestion);
+
+  // Initialize
+  shuffledQuestions = shuffleArray(quizQuestions);
+  loadQuestion();
+</script>
