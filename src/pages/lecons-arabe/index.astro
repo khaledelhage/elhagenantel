@@ -1,0 +1,361 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const lecons = [
+  {
+    href: '/lecons-arabe/lheure/',
+    icon: '🕐',
+    title: "L'heure",
+    arabic: 'السَّاعَة',
+    description: 'Lire et dire l\'heure, les chiffres de 1 à 12, les fractions et les moments de la journée.',
+  },
+  {
+    href: '/lecons-arabe/les-jours/',
+    icon: '📅',
+    title: 'Les jours de la semaine',
+    arabic: 'أَيَّامُ الأُسْبُوعِ',
+    description: 'Apprendre les 7 jours, leur origine numérique et les expressions pour parler du temps.',
+  },
+  {
+    href: '/lecons-arabe/les-saisons/',
+    icon: '🍂',
+    title: 'Les saisons',
+    arabic: 'فُصُولُ السَّنَة',
+    description: 'Les 4 saisons, leur étymologie fascinante et des mnémoniques pour les retenir.',
+  },
+  {
+    href: '/lecons-arabe/la-meteo/',
+    icon: '⛅',
+    title: 'La météo',
+    arabic: 'الطَّقْس',
+    description: 'Le vocabulaire du temps qu\'il fait : soleil, pluie, neige, vent et expressions utiles.',
+  },
+  {
+    href: '/lecons-arabe/les-verbes/',
+    icon: '✍️',
+    title: 'Les verbes',
+    arabic: 'الأَفْعَال',
+    description: 'Comprendre et conjuguer le passé (الماضي) et le présent (المضارع) avec 4 verbes modèles.',
+  },
+];
+---
+
+<BaseLayout title="Leçons d'arabe — El-Hage Nantel" description="Toutes les leçons d'arabe : vocabulaire, conjugaison, quiz interactifs et mnémoniques.">
+
+<header>
+  <div class="header-bg"></div>
+  <div class="header-content">
+    <p class="header-arabic">اللغة العربية</p>
+    <h1>Leçons d'arabe</h1>
+    <p class="header-subtitle">Vocabulaire, grammaire et expressions<br>avec quiz interactifs et mnémoniques pour toi Mayoul</p>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="/" class="nav-home">← Retour</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="lecons">
+    <h2 class="section-title">Les leçons</h2>
+    <div class="lecons-grid">
+      {lecons.map((lecon) => (
+        <a href={lecon.href} class="lecon-card">
+          <div class="lecon-icon">{lecon.icon}</div>
+          <div class="lecon-body">
+            <h3>{lecon.title}</h3>
+            <p class="lecon-arabic">{lecon.arabic}</p>
+            <p class="lecon-desc">{lecon.description}</p>
+          </div>
+          <div class="lecon-arrow">→</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <h4>Quiz interactifs</h4>
+        <p>Chaque leçon se termine par un quiz pour tester tes connaissances.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧠</div>
+        <h4>Mnémoniques</h4>
+        <p>Des astuces adaptées aux francophones pour mémoriser le vocabulaire.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔤</div>
+        <h4>Translitération</h4>
+        <p>Chaque mot arabe est accompagné de sa prononciation en caractères latins.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; {new Date().getFullYear()} El-Hage Nantel</p>
+</footer>
+
+</BaseLayout>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Lora', Georgia, serif;
+    background: #faf7f2;
+    color: #2c2c2c;
+    line-height: 1.7;
+  }
+
+  /* Header / Hero */
+  header {
+    position: relative;
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem 4.5rem;
+    overflow: hidden;
+  }
+
+  .header-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(196,135,59,0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 50%, rgba(42,122,110,0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .header-content {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .header-arabic {
+    font-family: 'Amiri', serif;
+    font-size: 2.5rem;
+    color: #c4873b;
+    direction: rtl;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.02em;
+  }
+
+  .header-subtitle {
+    font-size: 1.05rem;
+    opacity: 0.7;
+    line-height: 1.6;
+  }
+
+  /* Nav */
+  nav {
+    background: #fff;
+    border-bottom: 1px solid #e8e0d4;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #6b6b6b;
+    text-decoration: none;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+
+  nav a.nav-home {
+    color: #c4873b;
+    font-weight: 600;
+  }
+
+  nav a:hover {
+    color: #c4873b;
+  }
+
+  /* Main */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #6b6b6b;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Lesson cards */
+  .lecons-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .lecon-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: #fff;
+    border: 1px solid #e8e0d4;
+    border-radius: 12px;
+    padding: 1.5rem 1.8rem;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .lecon-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    border-color: #c4873b;
+  }
+
+  .lecon-icon {
+    font-size: 2.4rem;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5e6d0;
+    border-radius: 12px;
+  }
+
+  .lecon-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .lecon-body h3 {
+    font-size: 1.15rem;
+    color: #1a1a2e;
+    margin-bottom: 0.15rem;
+  }
+
+  .lecon-arabic {
+    font-family: 'Amiri', serif;
+    font-size: 1.2rem;
+    color: #c4873b;
+    direction: rtl;
+    display: inline-block;
+    margin-bottom: 0.4rem;
+  }
+
+  .lecon-desc {
+    font-size: 0.88rem;
+    color: #6b6b6b;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .lecon-arrow {
+    font-size: 1.4rem;
+    color: #c4873b;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .lecon-card:hover .lecon-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Features */
+  .features {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #e8e0d4;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .feature h4 {
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+  }
+
+  .feature p {
+    font-size: 0.85rem;
+    color: #6b6b6b;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: #6b6b6b;
+    font-size: 0.85rem;
+    border-top: 1px solid #e8e0d4;
+    margin-top: 2rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header { padding: 3rem 1.5rem 3.5rem; }
+    .header-arabic { font-size: 2rem; }
+    header h1 { font-size: 1.8rem; }
+
+    nav a { padding: 0.8rem 1rem; font-size: 0.85rem; }
+
+    .lecon-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.3rem;
+    }
+
+    .lecon-arrow { display: none; }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+</style>
