@@ -107,6 +107,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <div class="pronoun-order-toggle">
+    <span class="toggle-label">Ordre des pronoms :</span>
+    <div class="toggle-buttons">
+      <button class="toggle-btn active" data-order="grouped">Sing. · Duel · Plur.</button>
+      <button class="toggle-btn" data-order="traditional">Classique</button>
+    </div>
+  </div>
+
   <!-- SECTION 3: CONJUGAISON -->
   <section id="conjugaison">
     <h2><span class="arabic">التَّصْرِيف</span> Conjugaison au subjonctif</h2>
@@ -1004,6 +1012,64 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     margin-top: 2px;
   }
 
+  /* Pronoun order toggle */
+  .pronoun-order-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    padding: 0.8rem 1.2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .toggle-label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    white-space: nowrap;
+  }
+
+  .toggle-buttons {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .toggle-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    font-family: 'Lora', serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text-light);
+  }
+
+  .toggle-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .toggle-btn.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  .group-header td {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    background: var(--accent-light) !important;
+    padding: 0.4rem 1rem !important;
+    font-weight: 700;
+    text-align: left !important;
+  }
+
   /* Tabs */
   .verb-tabs {
     display: flex;
@@ -1292,10 +1358,62 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     .nasb-comparison { gap: 1rem; }
     .vocab-grid { grid-template-columns: repeat(2, 1fr); }
     .five-verbs-grid { grid-template-columns: repeat(2, 1fr); }
+    .pronoun-order-toggle { flex-direction: column; align-items: flex-start; }
   }
 </style>
 
 <script>
+  // Pronoun order toggle
+  const GROUPED_ORDER = ['Je', 'Tu (masc.)', 'Tu (fém.)', 'Il', 'Elle', 'Vous (duel)', 'Ils (duel)', 'Elles (duel)', 'Nous', 'Vous (masc. pl.)', 'Vous (fém. pl.)', 'Ils (pl.)', 'Elles (pl.)'];
+  const TRADITIONAL_ORDER = ['Je', 'Tu (masc.)', 'Tu (fém.)', 'Il', 'Elle', 'Nous', 'Vous (duel)', 'Vous (masc. pl.)', 'Vous (fém. pl.)', 'Ils (duel)', 'Elles (duel)', 'Ils (pl.)', 'Elles (pl.)'];
+  const GROUP_STARTS: Record<string, string> = { 'Je': 'Singulier', 'Vous (duel)': 'Duel', 'Nous': 'Pluriel' };
+
+  function reorderAllTables(order: string[], showGroups: boolean) {
+    document.querySelectorAll('tbody').forEach(tbody => {
+      const rows = Array.from(tbody.querySelectorAll('tr:not(.group-header)'));
+      if (!rows.length) return;
+      const pronouns = rows.map(r => r.querySelector('.pronoun-fr')?.textContent?.trim() || '');
+      if (!pronouns.every(p => order.includes(p))) return;
+
+      tbody.querySelectorAll('.group-header').forEach(h => h.remove());
+
+      rows.sort((a, b) => {
+        const aName = a.querySelector('.pronoun-fr')?.textContent?.trim() || '';
+        const bName = b.querySelector('.pronoun-fr')?.textContent?.trim() || '';
+        return order.indexOf(aName) - order.indexOf(bName);
+      });
+
+      rows.forEach(row => {
+        const name = row.querySelector('.pronoun-fr')?.textContent?.trim() || '';
+        if (showGroups && GROUP_STARTS[name]) {
+          const header = document.createElement('tr');
+          header.className = 'group-header';
+          const td = document.createElement('td');
+          td.colSpan = row.children.length;
+          td.textContent = GROUP_STARTS[name];
+          header.appendChild(td);
+          tbody.appendChild(header);
+        }
+        tbody.appendChild(row);
+      });
+    });
+  }
+
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const order = (btn as HTMLElement).dataset.order;
+      if (order === 'grouped') {
+        reorderAllTables(GROUPED_ORDER, true);
+      } else {
+        reorderAllTables(TRADITIONAL_ORDER, false);
+      }
+    });
+  });
+
+  reorderAllTables(GROUPED_ORDER, true);
+
   // Tab switching for verb tables
   function setupTabs(tabContainerId: string, contentPrefix: string) {
     const tabs = document.querySelectorAll(`#${tabContainerId} .verb-tab`);
