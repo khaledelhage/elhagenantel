@@ -107,14 +107,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <div class="pronoun-order-toggle">
-    <span class="toggle-label">Ordre des pronoms :</span>
-    <div class="toggle-buttons">
-      <button class="toggle-btn active" data-order="grouped">Sing. · Duel · Plur.</button>
-      <button class="toggle-btn" data-order="traditional">Classique</button>
-    </div>
-  </div>
-
   <!-- SECTION 3: CONJUGAISON -->
   <section id="conjugaison">
     <h2><span class="arabic">التَّصْرِيف</span> Conjugaison au subjonctif</h2>
@@ -135,6 +127,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
 
     <h3>Conjugaison complète : choisir un verbe</h3>
+
+    <div class="pronoun-order-toggle">
+      <span class="toggle-label">Ordre des pronoms :</span>
+      <div class="toggle-buttons">
+        <button class="toggle-btn active" data-order="grouped">Sing. · Duel · Plur.</button>
+        <button class="toggle-btn" data-order="traditional">Classique</button>
+      </div>
+    </div>
 
     <div class="verb-tabs" id="nasb-tabs">
       <div class="verb-tab active" data-verb="kataba"><span class="tab-arabic">كَتَبَ</span> écrire</div>

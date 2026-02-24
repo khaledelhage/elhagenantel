@@ -74,14 +74,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <div class="pronoun-order-toggle">
-    <span class="toggle-label">Ordre des pronoms :</span>
-    <div class="toggle-buttons">
-      <button class="toggle-btn active" data-order="grouped">Sing. · Duel · Plur.</button>
-      <button class="toggle-btn" data-order="traditional">Classique</button>
-    </div>
-  </div>
-
   <!-- SECTION 2: الماضي -->
   <section id="madi">
     <h2><span class="arabic">الماضي</span> Le passé (accompli)</h2>
@@ -94,6 +86,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
 
     <h3>Conjugaison complète : choisir un verbe</h3>
+
+    <div class="pronoun-order-toggle">
+      <span class="toggle-label">Ordre des pronoms :</span>
+      <div class="toggle-buttons">
+        <button class="toggle-btn active" data-order="grouped">Sing. · Duel · Plur.</button>
+        <button class="toggle-btn" data-order="traditional">Classique</button>
+      </div>
+    </div>
 
     <div class="verb-tabs" id="madi-tabs">
       <div class="verb-tab active" data-verb="kataba"><span class="tab-arabic">كَتَبَ</span> écrire</div>
@@ -273,6 +273,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
 
     <h3>Conjugaison complète : choisir un verbe</h3>
+
+    <div class="pronoun-order-toggle">
+      <span class="toggle-label">Ordre des pronoms :</span>
+      <div class="toggle-buttons">
+        <button class="toggle-btn active" data-order="grouped">Sing. · Duel · Plur.</button>
+        <button class="toggle-btn" data-order="traditional">Classique</button>
+      </div>
+    </div>
 
     <div class="verb-tabs" id="mudari-tabs">
       <div class="verb-tab active" data-verb="yaktubu"><span class="tab-arabic">يَكْتُبُ</span> écrire</div>
@@ -1348,9 +1356,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   document.querySelectorAll('.toggle-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
       const order = (btn as HTMLElement).dataset.order;
+      document.querySelectorAll('.toggle-btn').forEach(b => {
+        b.classList.toggle('active', (b as HTMLElement).dataset.order === order);
+      });
       if (order === 'grouped') {
         reorderAllTables(GROUPED_ORDER, true);
       } else {
