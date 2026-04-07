@@ -1,0 +1,1539 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="الإعْرَاب — Les déclinaisons du nom arabe" description="Les trois cas du nom en arabe : المرفوع (nominatif), المنصوب (accusatif) et المجرور (génitif). Marqueurs, tanwīn, prépositions et الإضافة.">
+
+<header>
+  <h1>الإعْرَابُ</h1>
+  <p>Les déclinaisons du nom en arabe :<br>nominatif, accusatif et génitif</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#" onclick="history.back(); return false;" class="nav-home">← Retour</a></li>
+    <li><a href="#intro" class="active">Introduction</a></li>
+    <li><a href="#marfoo">المرفوع</a></li>
+    <li><a href="#mansoob">المنصوب</a></li>
+    <li><a href="#majroor">المجرور</a></li>
+    <li><a href="#tableau">Tableau</a></li>
+    <li><a href="#prepositions">Prépositions</a></li>
+    <li><a href="#idafa">الإضافة</a></li>
+    <li><a href="#phrases">Phrases</a></li>
+    <li><a href="#quiz">Quiz</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: INTRODUCTION -->
+  <section id="intro">
+    <h2><span class="arabic">الإعْرَاب</span> Le système de déclinaisons</h2>
+
+    <p>En français, l'ordre des mots détermine la fonction : "le chat mange la souris" et "la souris mange le chat" ont des sens opposés. En arabe, ce n'est pas l'ordre des mots qui indique la fonction, c'est la terminaison du mot. Ce système s'appelle الإعْرَاب (l'iʿrāb).</p>
+
+    <p>Chaque nom en arabe porte une marque vocale à la fin qui indique sa fonction dans la phrase. Il existe trois cas :</p>
+
+    <div class="cases-overview">
+      <div class="case-card case-marfoo">
+        <div class="case-name-ar">المَرْفُوع</div>
+        <div class="case-name-fr">Nominatif</div>
+        <div class="case-marker">ـُ / ـٌ</div>
+        <div class="case-role">sujet, attribut</div>
+      </div>
+      <div class="case-card case-mansoob">
+        <div class="case-name-ar">المَنْصُوب</div>
+        <div class="case-name-fr">Accusatif</div>
+        <div class="case-marker">ـَ / ـًا</div>
+        <div class="case-role">complément d'objet</div>
+      </div>
+      <div class="case-card case-majroor">
+        <div class="case-name-ar">المَجْرُور</div>
+        <div class="case-name-fr">Génitif</div>
+        <div class="case-marker">ـِ / ـٍ</div>
+        <div class="case-role">après préposition, annexion</div>
+      </div>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>Pourquoi apprendre les déclinaisons ?</h4>
+      <p>En arabe parlé (dialectal), les déclinaisons ont largement disparu. Mais en arabe standard (الفصحى), elles sont essentielles pour lire correctement, comprendre les textes et écrire avec précision. Les déclinaisons sont aussi la clé pour comprendre la grammaire arabe en profondeur.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: المرفوع -->
+  <section id="marfoo">
+    <h2><span class="arabic">المَرْفُوع</span> Le nominatif</h2>
+
+    <p>Le المرفوع est le cas "de base" du nom en arabe. Son marqueur est la ضمّة (ـُ) pour les noms définis, ou le tanwīn ḍamma (ـٌ) pour les noms indéfinis.</p>
+
+    <div class="marker-demo">
+      <div class="marker-box">
+        <span class="marker-type">Défini</span>
+        <span class="marker-example">الكِتَابُ</span>
+        <span class="marker-translit">al-kitābu</span>
+        <span class="marker-vowel">ـُ</span>
+      </div>
+      <div class="marker-box">
+        <span class="marker-type">Indéfini</span>
+        <span class="marker-example">كِتَابٌ</span>
+        <span class="marker-translit">kitābun</span>
+        <span class="marker-vowel">ـٌ</span>
+      </div>
+    </div>
+
+    <h3>Quand un nom est-il au المرفوع ?</h3>
+
+    <p>Un nom est au nominatif dans trois situations principales :</p>
+
+    <div class="usage-cards">
+      <div class="usage-card">
+        <div class="usage-number">1</div>
+        <div class="usage-content">
+          <div class="usage-title">Sujet de la phrase nominale (المبتدأ)</div>
+          <div class="usage-example"><span class="arabic">الوَلَدُ سَعِيدٌ</span></div>
+          <div class="usage-trans">Le garçon est content</div>
+        </div>
+      </div>
+      <div class="usage-card">
+        <div class="usage-number">2</div>
+        <div class="usage-content">
+          <div class="usage-title">Attribut de la phrase nominale (الخبر)</div>
+          <div class="usage-example"><span class="arabic">الوَلَدُ سَعِيدٌ</span></div>
+          <div class="usage-trans">Les deux mots sont au مرفوع</div>
+        </div>
+      </div>
+      <div class="usage-card">
+        <div class="usage-number">3</div>
+        <div class="usage-content">
+          <div class="usage-title">Sujet du verbe (الفاعل)</div>
+          <div class="usage-example"><span class="arabic">جَاءَ الوَلَدُ</span></div>
+          <div class="usage-trans">Le garçon est venu</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="concept-box teal">
+      <h4>Le مرفوع et كَانَ</h4>
+      <p>Après كَانَ et ses sœurs, le sujet (اسم كَانَ) reste au مرفوع, mais l'attribut (خبر كَانَ) passe au منصوب. C'est l'une des différences clés avec la phrase nominale simple, où les deux sont au مرفوع. Voir la leçon <a href="/lecons-arabe/kana-asbaha/" style="color:var(--teal); text-decoration:underline;">كَانَ وَأَصْبَحَ</a>.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: المنصوب -->
+  <section id="mansoob">
+    <h2><span class="arabic">المَنْصُوب</span> L'accusatif</h2>
+
+    <p>Le المنصوب est le cas du complément d'objet direct et de l'attribut après كَانَ. Son marqueur est la فتحة (ـَ) pour les noms définis, ou le tanwīn fatḥa (ـًا) pour les noms indéfinis.</p>
+
+    <div class="marker-demo">
+      <div class="marker-box">
+        <span class="marker-type">Défini</span>
+        <span class="marker-example">الكِتَابَ</span>
+        <span class="marker-translit">al-kitāba</span>
+        <span class="marker-vowel">ـَ</span>
+      </div>
+      <div class="marker-box">
+        <span class="marker-type">Indéfini</span>
+        <span class="marker-example">كِتَابًا</span>
+        <span class="marker-translit">kitāban</span>
+        <span class="marker-vowel">ـًا</span>
+      </div>
+    </div>
+
+    <h3>Quand un nom est-il au المنصوب ?</h3>
+
+    <div class="usage-cards">
+      <div class="usage-card">
+        <div class="usage-number">1</div>
+        <div class="usage-content">
+          <div class="usage-title">Complément d'objet direct (المفعول به)</div>
+          <div class="usage-example"><span class="arabic">قَرَأْتُ الكِتَابَ</span></div>
+          <div class="usage-trans">J'ai lu le livre</div>
+        </div>
+      </div>
+      <div class="usage-card">
+        <div class="usage-number">2</div>
+        <div class="usage-content">
+          <div class="usage-title">Attribut de كَانَ et ses sœurs (خبر كَانَ)</div>
+          <div class="usage-example"><span class="arabic">كَانَ الجَوُّ جَمِيلًا</span></div>
+          <div class="usage-trans">Le temps était beau</div>
+        </div>
+      </div>
+      <div class="usage-card">
+        <div class="usage-number">3</div>
+        <div class="usage-content">
+          <div class="usage-title">Sujet de إنَّ et ses sœurs (اسم إنَّ)</div>
+          <div class="usage-example"><span class="arabic">إنَّ العِلْمَ نُورٌ</span></div>
+          <div class="usage-trans">Certes, le savoir est lumière</div>
+        </div>
+      </div>
+      <div class="usage-card">
+        <div class="usage-number">4</div>
+        <div class="usage-content">
+          <div class="usage-title">Complément circonstanciel (الحال, الظرف)</div>
+          <div class="usage-example"><span class="arabic">جَاءَ رَاكِضًا</span></div>
+          <div class="usage-trans">Il est venu en courant</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>Le alif du tanwīn fatḥa</h4>
+      <p>Le tanwīn fatḥa (ـًا) s'écrit avec un alif de support : كِتَابًا, جَمِيلًا. Cette lettre alif ne se prononce pas, elle sert uniquement de support graphique au tanwīn. Exception : les mots qui se terminent par une tāʾ marbūṭa (ة) ou un hamza sur alif (اء) ne prennent pas ce alif de support : مَدِينَةً (et non مَدِينَةًا), سَمَاءً (et non سَمَاءًا).</p>
+    </div>
+  </section>
+
+  <!-- SECTION 4: المجرور -->
+  <section id="majroor">
+    <h2><span class="arabic">المَجْرُور</span> Le génitif</h2>
+
+    <p>Le المجرور est le cas qui suit les prépositions et qui marque le complément du nom dans l'annexion (الإضافة). Son marqueur est la كسرة (ـِ) pour les noms définis, ou le tanwīn kasra (ـٍ) pour les noms indéfinis.</p>
+
+    <div class="marker-demo">
+      <div class="marker-box">
+        <span class="marker-type">Défini</span>
+        <span class="marker-example">الكِتَابِ</span>
+        <span class="marker-translit">al-kitābi</span>
+        <span class="marker-vowel">ـِ</span>
+      </div>
+      <div class="marker-box">
+        <span class="marker-type">Indéfini</span>
+        <span class="marker-example">كِتَابٍ</span>
+        <span class="marker-translit">kitābin</span>
+        <span class="marker-vowel">ـٍ</span>
+      </div>
+    </div>
+
+    <h3>Quand un nom est-il au المجرور ?</h3>
+
+    <div class="usage-cards">
+      <div class="usage-card">
+        <div class="usage-number">1</div>
+        <div class="usage-content">
+          <div class="usage-title">Après une préposition (حرف الجرّ)</div>
+          <div class="usage-example"><span class="arabic">ذَهَبْتُ إلَى المَدْرَسَةِ</span></div>
+          <div class="usage-trans">Je suis allé à l'école</div>
+        </div>
+      </div>
+      <div class="usage-card">
+        <div class="usage-number">2</div>
+        <div class="usage-content">
+          <div class="usage-title">Complément du nom dans l'annexion (المضاف إليه)</div>
+          <div class="usage-example"><span class="arabic">كِتَابُ الوَلَدِ</span></div>
+          <div class="usage-trans">Le livre du garçon</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="concept-box teal">
+      <h4>Le المجرور : le cas le plus fréquent</h4>
+      <p>En pratique, le مجرور est le cas le plus fréquent en arabe, car les prépositions sont omniprésentes : فِي (dans), إلَى (vers), مِنْ (de), عَلَى (sur), بِـ (avec/par), لِـ (pour), عَنْ (de/au sujet de). Chaque fois qu'un nom suit une de ces prépositions, il passe au مجرور.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 5: TABLEAU RÉCAPITULATIF -->
+  <section id="tableau">
+    <h2><span class="arabic">جَدْوَل</span> Tableau récapitulatif</h2>
+
+    <p>Voici les marqueurs des trois cas, pour les noms définis (avec ال) et indéfinis (avec tanwīn) :</p>
+
+    <div class="conj-table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Cas</th>
+            <th class="ar">الإعْرَاب</th>
+            <th>Défini (avec ال)</th>
+            <th>Indéfini (tanwīn)</th>
+            <th>Fonction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pronoun-fr">Nominatif</td>
+            <td class="verb-ar">المَرْفُوع</td>
+            <td class="verb-ar">الكِتَابُ</td>
+            <td class="verb-ar">كِتَابٌ</td>
+            <td class="pronoun-fr">sujet, attribut</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Accusatif</td>
+            <td class="verb-ar">المَنْصُوب</td>
+            <td class="verb-ar">الكِتَابَ</td>
+            <td class="verb-ar">كِتَابًا</td>
+            <td class="pronoun-fr">objet, attribut de كَانَ</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Génitif</td>
+            <td class="verb-ar">المَجْرُور</td>
+            <td class="verb-ar">الكِتَابِ</td>
+            <td class="verb-ar">كِتَابٍ</td>
+            <td class="pronoun-fr">après préposition, annexion</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Les marqueurs sur un même mot</h3>
+
+    <p>Observons comment le même mot change de terminaison selon sa fonction :</p>
+
+    <div class="conj-table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Phrase</th>
+            <th class="ar">الجُمْلَة</th>
+            <th>Cas du mot "وَلَد"</th>
+            <th>Pourquoi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pronoun-fr">Le garçon est venu</td>
+            <td class="verb-ar">جَاءَ الوَلَدُ</td>
+            <td class="pronoun-fr">مرفوع (ـُ)</td>
+            <td class="pronoun-fr">sujet du verbe</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">J'ai vu le garçon</td>
+            <td class="verb-ar">رَأَيْتُ الوَلَدَ</td>
+            <td class="pronoun-fr">منصوب (ـَ)</td>
+            <td class="pronoun-fr">objet direct</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">J'ai parlé au garçon</td>
+            <td class="verb-ar">تَكَلَّمْتُ مَعَ الوَلَدِ</td>
+            <td class="pronoun-fr">مجرور (ـِ)</td>
+            <td class="pronoun-fr">après préposition مَعَ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>Le tanwīn : signe de l'indéfini</h4>
+      <p>Le tanwīn (doublement de la voyelle : ـٌ, ـًا, ـٍ) est le marqueur de l'indéfini en arabe. Dès qu'un mot porte l'article ال, le tanwīn disparaît et il ne reste que la voyelle simple (ـُ, ـَ, ـِ). Les deux ne coexistent jamais : un mot est soit défini (avec ال), soit indéfini (avec tanwīn).</p>
+    </div>
+  </section>
+
+  <!-- SECTION 6: LES PRÉPOSITIONS -->
+  <section id="prepositions">
+    <h2><span class="arabic">حُرُوفُ الجَرّ</span> Les prépositions</h2>
+
+    <p>Les prépositions sont les déclencheurs les plus courants du مجرور. Voici les prépositions les plus fréquentes en arabe :</p>
+
+    <div class="prep-cards">
+      <div class="prep-card">
+        <div class="prep-ar">فِي</div>
+        <div class="prep-translit">fī</div>
+        <div class="prep-meaning">dans</div>
+        <div class="prep-example">
+          <span class="arabic">فِي البَيْتِ</span>
+          <small>dans la maison</small>
+        </div>
+      </div>
+      <div class="prep-card">
+        <div class="prep-ar">إلَى</div>
+        <div class="prep-translit">ilā</div>
+        <div class="prep-meaning">vers, à</div>
+        <div class="prep-example">
+          <span class="arabic">إلَى المَدْرَسَةِ</span>
+          <small>à l'école</small>
+        </div>
+      </div>
+      <div class="prep-card">
+        <div class="prep-ar">مِنْ</div>
+        <div class="prep-translit">min</div>
+        <div class="prep-meaning">de, depuis</div>
+        <div class="prep-example">
+          <span class="arabic">مِنَ المَدِينَةِ</span>
+          <small>de la ville</small>
+        </div>
+      </div>
+      <div class="prep-card">
+        <div class="prep-ar">عَلَى</div>
+        <div class="prep-translit">ʿalā</div>
+        <div class="prep-meaning">sur</div>
+        <div class="prep-example">
+          <span class="arabic">عَلَى الطَّاوِلَةِ</span>
+          <small>sur la table</small>
+        </div>
+      </div>
+      <div class="prep-card">
+        <div class="prep-ar">بِـ</div>
+        <div class="prep-translit">bi-</div>
+        <div class="prep-meaning">avec, par</div>
+        <div class="prep-example">
+          <span class="arabic">بِالقَلَمِ</span>
+          <small>avec le stylo</small>
+        </div>
+      </div>
+      <div class="prep-card">
+        <div class="prep-ar">لِـ</div>
+        <div class="prep-translit">li-</div>
+        <div class="prep-meaning">pour, à</div>
+        <div class="prep-example">
+          <span class="arabic">لِلوَلَدِ</span>
+          <small>pour le garçon</small>
+        </div>
+      </div>
+      <div class="prep-card">
+        <div class="prep-ar">عَنْ</div>
+        <div class="prep-translit">ʿan</div>
+        <div class="prep-meaning">de, au sujet de</div>
+        <div class="prep-example">
+          <span class="arabic">عَنِ الحَقِيقَةِ</span>
+          <small>au sujet de la vérité</small>
+        </div>
+      </div>
+      <div class="prep-card">
+        <div class="prep-ar">مَعَ</div>
+        <div class="prep-translit">maʿa</div>
+        <div class="prep-meaning">avec (accompagnement)</div>
+        <div class="prep-example">
+          <span class="arabic">مَعَ الأَصْدِقَاءِ</span>
+          <small>avec les amis</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="concept-box teal">
+      <h4>بِـ et لِـ : des préfixes</h4>
+      <p>Contrairement aux autres prépositions, بِـ et لِـ se collent directement au mot suivant (sans espace) : بِالقَلَمِ (avec le stylo), لِلوَلَدِ (pour le garçon). Quand لِـ précède un mot avec ال, le alif de l'article tombe : لِـ + الوَلَدِ = لِلوَلَدِ.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 7: الإضافة -->
+  <section id="idafa">
+    <h2><span class="arabic">الإضَافَة</span> L'annexion (complément du nom)</h2>
+
+    <p>L'annexion (الإضافة) est la construction arabe pour exprimer la possession ou le rapport entre deux noms. En français, on utilise "de" : "le livre de l'élève", "la porte de la maison". En arabe, on juxtapose simplement les deux noms.</p>
+
+    <div class="structure-demo">
+      <div class="struct-block">
+        <span class="struct-part struct-subject">المُضَاف</span>
+        <span class="struct-label">le possédé</span>
+      </div>
+      <span class="struct-plus">+</span>
+      <div class="struct-block">
+        <span class="struct-part struct-adj">المُضَاف إلَيْه</span>
+        <span class="struct-label">le possesseur (مجرور)</span>
+      </div>
+    </div>
+
+    <div class="idafa-rules">
+      <div class="idafa-rule">
+        <div class="rule-number">1</div>
+        <div class="rule-text">Le premier mot (المضاف) perd son tanwīn et son article ال</div>
+      </div>
+      <div class="idafa-rule">
+        <div class="rule-number">2</div>
+        <div class="rule-text">Le deuxième mot (المضاف إليه) est toujours au مجرور</div>
+      </div>
+      <div class="idafa-rule">
+        <div class="rule-number">3</div>
+        <div class="rule-text">C'est le deuxième mot qui détermine si l'ensemble est défini ou indéfini</div>
+      </div>
+    </div>
+
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">كِتَابُ الطَّالِبِ</div>
+        <div class="fr-line">Le livre de l'étudiant</div>
+        <span class="note">كِتَابُ (sans tanwīn, sans ال) + الطَّالِبِ (مجرور)</span>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">بَابُ البَيْتِ</div>
+        <div class="fr-line">La porte de la maison</div>
+        <span class="note">بَابُ (المضاف) + البَيْتِ (المضاف إليه, مجرور)</span>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">مُعَلِّمُ اللُّغَةِ العَرَبِيَّةِ</div>
+        <div class="fr-line">L'enseignant de la langue arabe</div>
+        <span class="note">مُعَلِّمُ + اللُّغَةِ (مجرور) + العَرَبِيَّةِ (adjectif, suit le cas)</span>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">كِتَابُ طَالِبٍ</div>
+        <div class="fr-line">Un livre d'un étudiant (indéfini)</div>
+        <span class="note">طَالِبٍ indéfini → l'ensemble est indéfini</span>
+      </div>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>L'annexion en chaîne</h4>
+      <p>On peut enchaîner plusieurs annexions. Seul le dernier mot peut porter ال ou le tanwīn, et tous les mots intermédiaires sont au مجرور :</p>
+      <div class="sentence-examples" style="margin-top:0.8rem; margin-bottom:0;">
+        <div class="sentence-card">
+          <div class="ar-line">مُدِيرُ مَكْتَبِ الوَزِيرِ</div>
+          <div class="fr-line">Le directeur du bureau du ministre</div>
+          <span class="note">مُدِيرُ + مَكْتَبِ (مجرور) + الوَزِيرِ (مجرور)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: PHRASES D'ENSEMBLE -->
+  <section id="phrases">
+    <h2><span class="arabic">أَمْثِلَة</span> Exemples variés</h2>
+
+    <p>Voici des phrases illustrant les trois cas en contexte :</p>
+
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">قَرَأَ الطَّالِبُ كِتَابًا فِي المَكْتَبَةِ</div>
+        <div class="fr-line">L'étudiant a lu un livre à la bibliothèque</div>
+        <span class="note">الطَّالِبُ (مرفوع, sujet) · كِتَابًا (منصوب, objet) · المَكْتَبَةِ (مجرور, après فِي)</span>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">كَتَبَتِ المُعَلِّمَةُ رِسَالَةً إلَى مُدِيرِ المَدْرَسَةِ</div>
+        <div class="fr-line">L'enseignante a écrit une lettre au directeur de l'école</div>
+        <span class="note">المُعَلِّمَةُ (مرفوع) · رِسَالَةً (منصوب) · مُدِيرِ (مجرور, après إلَى) · المَدْرَسَةِ (مجرور, إضافة)</span>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">الجَوُّ جَمِيلٌ فِي فَصْلِ الرَّبِيعِ</div>
+        <div class="fr-line">Le temps est beau au printemps</div>
+        <span class="note">الجَوُّ (مرفوع, مبتدأ) · جَمِيلٌ (مرفوع, خبر) · فَصْلِ (مجرور, après فِي) · الرَّبِيعِ (مجرور, إضافة)</span>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">سَافَرْتُ مَعَ أَخِي مِنْ بَيْرُوتَ إلَى مُونْتْرِيَالَ</div>
+        <div class="fr-line">J'ai voyagé avec mon frère de Beyrouth à Montréal</div>
+        <span class="note">أَخِي (مجرور, après مَعَ) · بَيْرُوتَ (مجرور) · مُونْتْرِيَالَ (مجرور, après إلَى)</span>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">إنَّ العِلْمَ نُورٌ وَالجَهْلَ ظَلَامٌ</div>
+        <div class="fr-line">Le savoir est lumière et l'ignorance est ténèbres</div>
+        <span class="note">العِلْمَ (منصوب, اسم إنَّ) · نُورٌ (مرفوع, خبر إنَّ)</span>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">وَجَدْتُ مِفْتَاحَ السَّيَّارَةِ عَلَى طَاوِلَةِ المَطْبَخِ</div>
+        <div class="fr-line">J'ai trouvé la clé de la voiture sur la table de la cuisine</div>
+        <span class="note">مِفْتَاحَ (منصوب, objet) · السَّيَّارَةِ (مجرور, إضافة) · طَاوِلَةِ (مجرور, après عَلَى) · المَطْبَخِ (مجرور, إضافة)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: QUIZ -->
+  <section id="quiz">
+    <h2><span class="arabic">اخْتِبَار</span> Quiz</h2>
+    <p>Teste ta compréhension des déclinaisons du nom en arabe.</p>
+
+    <div class="score-display">
+      Quiz : <strong><span id="progress">0</span> / <span id="total">0</span></strong>
+      <span class="score-separator">·</span>
+      Score : <strong><span id="score">0</span></strong>
+    </div>
+
+    <div class="quiz-area" id="quiz-area">
+      <div class="quiz-prompt">
+        <div class="context" id="quiz-context"></div>
+        <div class="question-verb" id="quiz-verb"></div>
+        <div class="question-info" id="quiz-info"></div>
+      </div>
+      <div class="quiz-options" id="quiz-options"></div>
+      <div class="quiz-feedback" id="quiz-feedback"></div>
+      <div class="quiz-controls">
+        <button class="btn" id="next-btn">Question suivante →</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Créé avec soin pour l'apprentissage de l'arabe par ton père</p>
+  <p style="font-family:'Amiri',serif; font-size:1.2em; margin-top:0.5rem; direction:rtl;">بالتوفيق والنجاح</p>
+</footer>
+
+</BaseLayout>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #faf7f2;
+    --bg-card: #ffffff;
+    --bg-dark: #1a1a2e;
+    --accent: #c4873b;
+    --accent-light: #f5e6d0;
+    --accent-dark: #8b5e2a;
+    --teal: #2a7a6e;
+    --teal-light: #e0f2ef;
+    --text: #2c2c2c;
+    --text-light: #6b6b6b;
+    --text-arabic: #1a1a2e;
+    --border: #e8e0d4;
+    --shadow: 0 2px 20px rgba(0,0,0,0.06);
+    --shadow-hover: 0 4px 30px rgba(0,0,0,0.1);
+    --radius: 12px;
+    --correct: #2a7a4e;
+    --correct-bg: #e8f5ec;
+    --wrong: #b83b3b;
+    --wrong-bg: #fce8e8;
+    --purple: #6a3d9a;
+    --purple-light: #f0e6f6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Lora', Georgia, serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .arabic {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+    font-size: 1.3em;
+    color: var(--text-arabic);
+    line-height: 2;
+  }
+
+  .transliteration {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  /* Header */
+  header {
+    background: var(--bg-dark);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: 'اللغة العربية';
+    font-family: 'Amiri', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    opacity: 0.03;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  header h1 {
+    font-family: 'Amiri', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    direction: rtl;
+    color: var(--accent);
+  }
+
+  header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    max-width: 500px;
+    margin: 0.5rem auto 0;
+  }
+
+  /* Navigation */
+  nav {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover, nav a.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  nav a.nav-home {
+    color: var(--accent);
+    font-weight: 600;
+    border-bottom-color: transparent;
+    border-right: 1px solid var(--border);
+    margin-right: 0.5rem;
+  }
+
+  /* Main */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+    animation: fadeIn 0.6s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    color: var(--accent-dark);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-light);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  h2 .arabic { font-size: 1.4em; color: var(--accent-dark); }
+
+  h3 {
+    font-size: 1.15rem;
+    color: var(--teal);
+    margin: 1.5rem 0 0.8rem;
+  }
+
+  p { margin-bottom: 1rem; }
+
+  /* Concept Box */
+  .concept-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+
+  .concept-box.highlight { border-left: 4px solid var(--accent); }
+  .concept-box.teal { border-left: 4px solid var(--teal); }
+
+  .concept-box h4 {
+    font-size: 1rem;
+    color: var(--accent-dark);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Cases overview cards */
+  .cases-overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+  }
+
+  .case-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .case-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .case-marfoo { border-top: 4px solid var(--teal); }
+  .case-mansoob { border-top: 4px solid var(--accent); }
+  .case-majroor { border-top: 4px solid var(--purple); }
+
+  .case-name-ar {
+    font-family: 'Amiri', serif;
+    font-size: 1.8rem;
+    direction: rtl;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .case-marfoo .case-name-ar { color: var(--teal); }
+  .case-mansoob .case-name-ar { color: var(--accent); }
+  .case-majroor .case-name-ar { color: var(--purple); }
+
+  .case-name-fr {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  .case-marker {
+    font-family: 'Amiri', serif;
+    font-size: 2rem;
+    direction: rtl;
+    color: var(--text-arabic);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .case-role {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  /* Marker demo */
+  .marker-demo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+  }
+
+  .marker-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    background: var(--bg-card);
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+
+  .marker-type {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .marker-example {
+    font-family: 'Amiri', serif;
+    font-size: 2rem;
+    direction: rtl;
+    color: var(--text-arabic);
+    font-weight: 700;
+  }
+
+  .marker-translit {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  .marker-vowel {
+    font-family: 'Amiri', serif;
+    font-size: 2.5rem;
+    direction: rtl;
+    color: var(--accent);
+    font-weight: 700;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+  }
+
+  /* Usage cards */
+  .usage-cards {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .usage-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 0.8rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease;
+  }
+
+  .usage-card:hover { transform: translateX(4px); }
+
+  .usage-number {
+    width: 32px;
+    height: 32px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+  }
+
+  .usage-content { flex: 1; }
+
+  .usage-title {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+  }
+
+  .usage-example {
+    margin-bottom: 0.2rem;
+  }
+
+  .usage-example .arabic {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+
+  .usage-trans {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  /* Preposition cards */
+  .prep-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .prep-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .prep-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .prep-ar {
+    font-family: 'Amiri', serif;
+    font-size: 2rem;
+    direction: rtl;
+    color: var(--purple);
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+
+  .prep-translit {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 0.3rem;
+  }
+
+  .prep-meaning {
+    font-size: 0.9rem;
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+  }
+
+  .prep-example {
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 0.6rem;
+  }
+
+  .prep-example .arabic {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 0.2rem;
+  }
+
+  .prep-example small {
+    color: var(--text-light);
+    font-size: 0.78rem;
+    font-style: italic;
+  }
+
+  /* Structure demo */
+  .structure-demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+
+  .struct-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .struct-part {
+    font-family: 'Amiri', serif;
+    font-size: 1.3rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    direction: rtl;
+  }
+
+  .struct-subject { background: var(--teal-light); color: var(--teal); }
+  .struct-adj { background: var(--purple-light); color: var(--purple); }
+
+  .struct-label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .struct-plus {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    font-weight: 300;
+  }
+
+  /* Idafa rules */
+  .idafa-rules {
+    margin: 1.5rem 0;
+  }
+
+  .idafa-rule {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+    box-shadow: var(--shadow);
+  }
+
+  .rule-number {
+    width: 28px;
+    height: 28px;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  .rule-text {
+    font-size: 0.95rem;
+  }
+
+  /* Sentence cards */
+  .sentence-examples { margin: 1.5rem 0; }
+
+  .sentence-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 0.8rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease;
+  }
+
+  .sentence-card:hover { transform: translateX(4px); }
+
+  .ar-line {
+    font-family: 'Amiri', serif;
+    font-size: 1.5rem;
+    direction: rtl;
+    color: var(--text-arabic);
+    font-weight: 700;
+    line-height: 2;
+  }
+
+  .fr-line {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 0.2rem;
+  }
+
+  .sentence-card .note {
+    font-size: 0.8rem;
+    color: var(--accent-dark);
+    background: var(--accent-light);
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-top: 0.3rem;
+    width: fit-content;
+  }
+
+  /* Conjugation tables */
+  .conj-table-wrapper {
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+
+  thead {
+    background: var(--bg-dark);
+    color: #fff;
+  }
+
+  th {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
+  th.ar {
+    font-family: 'Amiri', serif;
+    font-size: 1.1rem;
+    direction: rtl;
+    text-align: right;
+  }
+
+  td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  tbody tr:hover { background: var(--accent-light); }
+
+  .pronoun-fr {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.9rem;
+  }
+
+  .verb-ar {
+    font-family: 'Amiri', serif;
+    font-size: 1.4em;
+    direction: rtl;
+    font-weight: 700;
+    color: var(--accent-dark);
+    text-align: right;
+  }
+
+  /* Quiz Section */
+  .quiz-area {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow);
+  }
+
+  .quiz-prompt {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .quiz-prompt .context {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .quiz-prompt .question-verb {
+    font-family: 'Amiri', serif;
+    font-size: 2.2rem;
+    color: var(--text-arabic);
+    direction: rtl;
+  }
+
+  .quiz-prompt .question-info {
+    font-size: 1rem;
+    color: var(--accent-dark);
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+
+  .quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .quiz-option {
+    padding: 1rem;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+    font-family: 'Amiri', serif;
+    font-size: 1.4rem;
+    direction: rtl;
+  }
+
+  .quiz-option.fr-option {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1rem;
+    direction: ltr;
+  }
+
+  .quiz-option:hover:not(.disabled) {
+    border-color: var(--accent);
+    background: var(--accent-light);
+    transform: translateY(-1px);
+  }
+
+  .quiz-option.correct { border-color: var(--correct); background: var(--correct); color: #fff; }
+  .quiz-option.wrong { border-color: var(--wrong); background: var(--wrong); color: #fff; }
+  .quiz-option.disabled { cursor: default; opacity: 0.7; }
+
+  .quiz-feedback {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: none;
+    font-size: 0.95rem;
+  }
+
+  .quiz-feedback.show { display: block; }
+  .quiz-feedback.correct { background: var(--correct-bg); color: var(--correct); }
+  .quiz-feedback.wrong { background: var(--wrong-bg); color: var(--wrong); }
+
+  .quiz-controls { text-align: center; margin-top: 1.2rem; }
+
+  .btn {
+    padding: 0.7rem 2rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
+
+  .score-display {
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+  }
+
+  .score-display strong { color: var(--teal); font-size: 1.1em; }
+  .score-separator { margin: 0 0.8rem; color: var(--border); }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    nav a { padding: 0.8rem 1rem; font-size: 0.85rem; }
+    main { padding: 1.5rem 1rem 3rem; }
+    .cases-overview { grid-template-columns: 1fr; }
+    .marker-demo { grid-template-columns: 1fr; }
+    .prep-cards { grid-template-columns: repeat(2, 1fr); }
+    .quiz-options { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  // Smooth scroll for nav
+  document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href')!);
+      target!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+
+  // Active nav on scroll
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    let current = '';
+    sections.forEach(section => {
+      const top = section.offsetTop - 100;
+      if (window.scrollY >= top) current = section.id;
+    });
+    document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+    });
+  });
+
+  // Quiz System
+  interface QuizQuestion {
+    context: string;
+    verb: string;
+    info: string;
+    correct: string;
+    options: string[];
+    explanation: string;
+    frOptions?: boolean;
+  }
+
+  const quizQuestions: QuizQuestion[] = [
+    {
+      context: "Quel est le cas du mot الوَلَدُ dans cette phrase ?",
+      verb: "جَاءَ الوَلَدُ",
+      info: "Le garçon est venu",
+      correct: "مرفوع (nominatif)",
+      options: ["مرفوع (nominatif)", "منصوب (accusatif)", "مجرور (génitif)", "مبني (invariable)"],
+      frOptions: true,
+      explanation: "الوَلَدُ est le sujet (الفاعل) du verbe جَاءَ. Le sujet est toujours au مرفوع, marqué par la ضمّة (ـُ)."
+    },
+    {
+      context: "Quel est le cas du mot الكِتَابَ dans cette phrase ?",
+      verb: "قَرَأْتُ الكِتَابَ",
+      info: "J'ai lu le livre",
+      correct: "منصوب (accusatif)",
+      options: ["مرفوع (nominatif)", "منصوب (accusatif)", "مجرور (génitif)", "مبني (invariable)"],
+      frOptions: true,
+      explanation: "الكِتَابَ est le complément d'objet direct (المفعول به) du verbe قَرَأْتُ. L'objet est au منصوب, marqué par la فتحة (ـَ)."
+    },
+    {
+      context: "Complète avec la bonne terminaison :",
+      verb: "ذَهَبْتُ إلَى المَدْرَسَة...",
+      info: "Je suis allé à l'école",
+      correct: "المَدْرَسَةِ",
+      options: ["المَدْرَسَةِ", "المَدْرَسَةُ", "المَدْرَسَةَ", "مَدْرَسَةً"],
+      explanation: "Après la préposition إلَى, le nom passe au مجرور : المَدْرَسَةِ (avec كسرة)."
+    },
+    {
+      context: "Quel est le tanwīn du مرفوع (nominatif indéfini) ?",
+      verb: "كِتَاب...",
+      info: "",
+      correct: "كِتَابٌ (ـٌ)",
+      options: ["كِتَابٌ (ـٌ)", "كِتَابًا (ـًا)", "كِتَابٍ (ـٍ)", "كِتَابُ (ـُ)"],
+      explanation: "Le tanwīn du مرفوع est le tanwīn ḍamma (ـٌ) : كِتَابٌ. Le tanwīn indique que le mot est indéfini."
+    },
+    {
+      context: "Dans la phrase nominale الجَوُّ جَمِيلٌ, quel est le cas de جَمِيلٌ ?",
+      verb: "الجَوُّ جَمِيلٌ",
+      info: "Le temps est beau",
+      correct: "مرفوع (c'est le خبر)",
+      options: ["مرفوع (c'est le خبر)", "منصوب (c'est l'objet)", "مجرور (après préposition)", "منصوب (attribut de كَانَ)"],
+      frOptions: true,
+      explanation: "Dans la phrase nominale, le sujet (المبتدأ) et l'attribut (الخبر) sont tous les deux au مرفوع."
+    },
+    {
+      context: "Complète : كَانَ الجَوُّ ...",
+      verb: "جَمِيل (beau)",
+      info: "Le temps était beau",
+      correct: "جَمِيلًا",
+      options: ["جَمِيلًا", "جَمِيلٌ", "جَمِيلٍ", "جَمِيلُ"],
+      explanation: "Après كَانَ, l'attribut (خبر كَانَ) passe au منصوب : جَمِيلًا (tanwīn fatḥa)."
+    },
+    {
+      context: "Que signifie كِتَابُ الطَّالِبِ ?",
+      verb: "كِتَابُ الطَّالِبِ",
+      info: "Construction en الإضافة",
+      correct: "Le livre de l'étudiant",
+      options: ["Le livre de l'étudiant", "L'étudiant du livre", "Un livre et un étudiant", "Le livre est étudiant"],
+      frOptions: true,
+      explanation: "C'est une annexion (إضافة) : le premier mot (المضاف) possède le deuxième (المضاف إليه). الطَّالِبِ est au مجرور."
+    },
+    {
+      context: "Pourquoi الوَلَدِ est-il au مجرور ici ?",
+      verb: "مَعَ الوَلَدِ",
+      info: "avec le garçon",
+      correct: "Parce qu'il suit la préposition مَعَ",
+      options: ["Parce qu'il suit la préposition مَعَ", "Parce qu'il est sujet", "Parce qu'il est objet", "Parce qu'il est attribut de كَانَ"],
+      frOptions: true,
+      explanation: "Après une préposition (حرف جرّ), le nom est toujours au مجرور. مَعَ est une préposition."
+    },
+    {
+      context: "Quel est le cas du mot رِسَالَةً ?",
+      verb: "كَتَبْتُ رِسَالَةً",
+      info: "J'ai écrit une lettre",
+      correct: "منصوب (accusatif)",
+      options: ["منصوب (accusatif)", "مرفوع (nominatif)", "مجرور (génitif)", "مبني (invariable)"],
+      frOptions: true,
+      explanation: "رِسَالَةً est le complément d'objet direct de كَتَبْتُ. Le tanwīn fatḥa (ـً) sur la tāʾ marbūṭa marque le منصوب indéfini. Pas de alif de support après ة."
+    },
+    {
+      context: "Dans l'annexion, le premier mot (المضاف) :",
+      verb: "كِتَابُ المُعَلِّمِ",
+      info: "",
+      correct: "Perd son tanwīn et son article ال",
+      options: ["Perd son tanwīn et son article ال", "Prend le tanwīn ḍamma", "Passe au مجرور", "Prend l'article ال"],
+      frOptions: true,
+      explanation: "Le المضاف ne peut porter ni tanwīn ni ال. On dit كِتَابُ (sans tanwīn) et non الكِتَابُ ni كِتَابٌ."
+    },
+    {
+      context: "Quelle préposition signifie « dans » ?",
+      verb: "... البَيْتِ",
+      info: "dans la maison",
+      correct: "فِي",
+      options: ["فِي", "إلَى", "مِنْ", "عَلَى"],
+      explanation: "فِي = dans. فِي البَيْتِ = dans la maison. Le nom après فِي est au مجرور."
+    },
+    {
+      context: "Complète avec la bonne forme :",
+      verb: "إنَّ العِلْمَ ...",
+      info: "Certes le savoir est lumière",
+      correct: "نُورٌ",
+      options: ["نُورٌ", "نُورًا", "نُورٍ", "نُورَ"],
+      explanation: "Après إنَّ, le sujet (اسم إنَّ) est au منصوب (العِلْمَ), mais l'attribut (خبر إنَّ) est au مرفوع : نُورٌ."
+    },
+    {
+      context: "Quel mot est au مجرور dans cette phrase ?",
+      verb: "وَضَعْتُ القَلَمَ عَلَى الطَّاوِلَةِ",
+      info: "J'ai posé le stylo sur la table",
+      correct: "الطَّاوِلَةِ (après عَلَى)",
+      options: ["الطَّاوِلَةِ (après عَلَى)", "القَلَمَ (objet direct)", "وَضَعْتُ (le verbe)", "القَلَمَ et الطَّاوِلَةِ"],
+      frOptions: true,
+      explanation: "الطَّاوِلَةِ est au مجرور car il suit la préposition عَلَى. القَلَمَ est au منصوب (objet direct)."
+    },
+    {
+      context: "Le tanwīn fatḥa s'écrit avec un alif de support sauf :",
+      verb: "كِتَابًا vs مَدِينَةً",
+      info: "",
+      correct: "Après tāʾ marbūṭa (ة) et hamza sur alif (اء)",
+      options: ["Après tāʾ marbūṭa (ة) et hamza sur alif (اء)", "Après les noms propres", "Après les noms féminins", "Jamais d'exception"],
+      frOptions: true,
+      explanation: "Le alif de support n'apparaît pas après ة (مَدِينَةً) ni après اء (سَمَاءً). Dans tous les autres cas, il est présent : كِتَابًا."
+    },
+    {
+      context: "Complète : سَافَرْتُ مِنْ بَيْرُوتَ إلَى ...",
+      verb: "مُونْتْرِيَال",
+      info: "J'ai voyagé de Beyrouth à Montréal",
+      correct: "مُونْتْرِيَالَ",
+      options: ["مُونْتْرِيَالَ", "مُونْتْرِيَالُ", "مُونْتْرِيَالِ", "مُونْتْرِيَالٍ"],
+      explanation: "Après إلَى, le nom est au مجرور. Mais مُونْتْرِيَال est un nom étranger (ممنوع من الصرف) : il prend la فتحة au lieu de la كسرة au مجرور."
+    },
+  ];
+
+  let currentQuestion = 0;
+  let score = 0;
+  let totalAnswered = 0;
+  let shuffledQuestions: QuizQuestion[] = [];
+  let answered = false;
+
+  function shuffleArray<T>(arr: T[]): T[] {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function loadQuestion() {
+    answered = false;
+
+    if (currentQuestion >= shuffledQuestions.length) {
+      shuffledQuestions = shuffleArray(quizQuestions);
+      currentQuestion = 0;
+    }
+
+    const q = shuffledQuestions[currentQuestion];
+    document.getElementById('quiz-context')!.textContent = q.context;
+    const verbEl = document.getElementById('quiz-verb')!;
+    verbEl.textContent = q.verb;
+    verbEl.style.direction = /[\u0600-\u06FF]/.test(q.verb) ? 'rtl' : 'ltr';
+    document.getElementById('quiz-info')!.textContent = q.info;
+
+    const optionsDiv = document.getElementById('quiz-options')!;
+    optionsDiv.innerHTML = '';
+
+    const shuffledOptions = shuffleArray(q.options);
+    shuffledOptions.forEach(opt => {
+      const btn = document.createElement('div');
+      btn.className = 'quiz-option' + (q.frOptions ? ' fr-option' : '');
+      btn.textContent = opt;
+      btn.addEventListener('click', () => checkAnswer(btn, opt, q));
+      optionsDiv.appendChild(btn);
+    });
+
+    document.getElementById('quiz-feedback')!.className = 'quiz-feedback';
+    document.getElementById('quiz-feedback')!.style.display = 'none';
+    document.getElementById('next-btn')!.style.display = 'none';
+  }
+
+  function checkAnswer(btn: HTMLElement, selected: string, question: QuizQuestion) {
+    if (answered) return;
+    answered = true;
+
+    const options = document.querySelectorAll('.quiz-option');
+    options.forEach(o => o.classList.add('disabled'));
+
+    const feedback = document.getElementById('quiz-feedback')!;
+
+    if (selected === question.correct) {
+      score++;
+      btn.classList.add('correct');
+      feedback.className = 'quiz-feedback show correct';
+      feedback.innerHTML = `Correct! ${question.explanation}`;
+      document.getElementById('score')!.textContent = String(score);
+    } else {
+      btn.classList.add('wrong');
+      options.forEach(o => {
+        if (o.textContent === question.correct) o.classList.add('correct');
+      });
+      feedback.className = 'quiz-feedback show wrong';
+      feedback.innerHTML = `La bonne réponse était <strong>${question.correct}</strong>. ${question.explanation}`;
+    }
+
+    document.getElementById('next-btn')!.style.display = 'inline-block';
+  }
+
+  function nextQuestion() {
+    totalAnswered++;
+    document.getElementById('progress')!.textContent = String(totalAnswered);
+    currentQuestion++;
+    loadQuestion();
+  }
+
+  document.getElementById('next-btn')!.addEventListener('click', nextQuestion);
+
+  shuffledQuestions = shuffleArray(quizQuestions);
+  document.getElementById('total')!.textContent = String(quizQuestions.length);
+  loadQuestion();
+</script>
