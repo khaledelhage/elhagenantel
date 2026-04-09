@@ -16,6 +16,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <li><a href="#madi">الماضي</a></li>
     <li><a href="#mudari">المضارع</a></li>
     <li><a href="#comparer">Comparer</a></li>
+    <li><a href="#accord">L'accord</a></li>
     <li><a href="#phrases">Phrases</a></li>
     <li><a href="#quiz">Quiz</a></li>
   </ul>
@@ -458,7 +459,145 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- SECTION 5: PHRASES -->
+  <!-- SECTION 5: L'ACCORD VERBE-SUJET -->
+  <section id="accord">
+    <h2><span class="arabic">الفِعْلُ وَالفَاعِل</span> L'accord du verbe avec le sujet</h2>
+
+    <p>En arabe, l'accord du verbe change selon sa position dans la phrase : avant ou après le sujet. C'est une règle fondamentale qui n'existe pas en français.</p>
+
+    <div class="concept-box teal">
+      <h4>Les deux structures de la phrase arabe</h4>
+      <p>La phrase arabe peut commencer par le verbe ou par le sujet. Le choix de la structure change la façon dont le verbe s'accorde.</p>
+    </div>
+
+    <h3>Structure 1 : Verbe + Sujet (الجُمْلَة الفِعْلِيَّة)</h3>
+
+    <p>Quand le verbe vient en premier, il reste toujours au singulier. Le verbe s'accorde uniquement en genre (masculin ou féminin), pas en nombre.</p>
+
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">شَرَحَ الْمُعَلِّمُونَ الدَّرْسَ</div>
+        <div class="fr-line">Les enseignants ont expliqué la leçon</div>
+        <div class="note">شَرَحَ au singulier masculin, même si الْمُعَلِّمُونَ est pluriel</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">حَضَرَتِ الْمُدِيرَاتُ الاجْتِمَاعَ</div>
+        <div class="fr-line">Les directrices ont assisté à la réunion</div>
+        <div class="note">حَضَرَتْ au singulier féminin (+ تْ pour le genre), même si الْمُدِيرَاتُ est pluriel</div>
+      </div>
+    </div>
+
+    <h3>Structure 2 : Sujet + Verbe (الجُمْلَة الاسْمِيَّة)</h3>
+
+    <p>Quand le sujet vient en premier, le verbe s'accorde en genre ET en nombre. C'est la logique la plus proche du français.</p>
+
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">الْمُعَلِّمُونَ شَرَحُوا الدَّرْسَ</div>
+        <div class="fr-line">Les enseignants ont expliqué la leçon</div>
+        <div class="note">شَرَحُوا au pluriel masculin (suffixe ـوا) pour s'accorder avec الْمُعَلِّمُونَ</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">الْمُدِيرَاتُ حَضَرْنَ الاجْتِمَاعَ</div>
+        <div class="fr-line">Les directrices ont assisté à la réunion</div>
+        <div class="note">حَضَرْنَ au pluriel féminin (suffixe ـنَ) pour s'accorder avec الْمُدِيرَاتُ</div>
+      </div>
+    </div>
+
+    <h3>Tableau récapitulatif</h3>
+
+    <div class="conj-table-wrapper">
+      <table class="accord-table">
+        <thead>
+          <tr>
+            <th>Structure</th>
+            <th>Exemple</th>
+            <th>Accord</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pronoun-fr">Verbe + sujet masc. pl.</td>
+            <td class="verb-ar">شَرَحَ الْمُعَلِّمُونَ</td>
+            <td class="meaning-col">singulier masculin</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Verbe + sujet fém. pl.</td>
+            <td class="verb-ar">حَضَرَتِ الْمُدِيرَاتُ</td>
+            <td class="meaning-col">singulier féminin (+ تْ)</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Sujet masc. pl. + verbe</td>
+            <td class="verb-ar">الْمُعَلِّمُونَ شَرَحُوا</td>
+            <td class="meaning-col">pluriel masculin (+ وا)</td>
+          </tr>
+          <tr>
+            <td class="pronoun-fr">Sujet fém. pl. + verbe</td>
+            <td class="verb-ar">الْمُدِيرَاتُ حَضَرْنَ</td>
+            <td class="meaning-col">pluriel féminin (+ نَ)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="concept-box highlight">
+      <h4>Pourquoi cette règle ?</h4>
+      <p>Quand le verbe arrive en premier, le locuteur n'a pas encore annoncé le sujet. Le verbe reste donc au singulier, et c'est le sujet qui suit qui précise de qui on parle. Quand le sujet arrive en premier, le verbe qui suit doit refléter cette information complète : genre et nombre.</p>
+    </div>
+
+    <h3>Avec le duel aussi</h3>
+
+    <p>La même logique s'applique au duel :</p>
+
+    <div class="sentence-examples">
+      <div class="sentence-card">
+        <div class="ar-line">ذَهَبَ الطَّالِبَانِ</div>
+        <div class="fr-line">Les deux étudiants sont partis</div>
+        <div class="note">Verbe en premier → ذَهَبَ reste au singulier</div>
+      </div>
+      <div class="sentence-card">
+        <div class="ar-line">الطَّالِبَانِ ذَهَبَا</div>
+        <div class="fr-line">Les deux étudiants sont partis</div>
+        <div class="note">Sujet en premier → ذَهَبَا au duel (suffixe ـا)</div>
+      </div>
+    </div>
+
+    <div class="concept-box teal">
+      <h4>Résumé simple</h4>
+      <div class="structure-demo">
+        <div class="struct-block">
+          <span class="struct-part struct-subject" style="font-family:'Amiri',serif; font-size:1.2em;">فِعْل</span>
+          <span class="struct-label">verbe</span>
+        </div>
+        <span class="struct-plus">+</span>
+        <div class="struct-block">
+          <span class="struct-part struct-adj" style="font-family:'Amiri',serif; font-size:1.2em;">فَاعِل</span>
+          <span class="struct-label">sujet</span>
+        </div>
+        <span class="struct-plus">=</span>
+        <div class="struct-block">
+          <span class="struct-part" style="background:var(--teal-light); color:var(--teal); padding:0.4rem 0.8rem; border-radius:6px;">genre seulement</span>
+        </div>
+      </div>
+      <div class="structure-demo" style="margin-top:1rem;">
+        <div class="struct-block">
+          <span class="struct-part struct-adj" style="font-family:'Amiri',serif; font-size:1.2em;">فَاعِل</span>
+          <span class="struct-label">sujet</span>
+        </div>
+        <span class="struct-plus">+</span>
+        <div class="struct-block">
+          <span class="struct-part struct-subject" style="font-family:'Amiri',serif; font-size:1.2em;">فِعْل</span>
+          <span class="struct-label">verbe</span>
+        </div>
+        <span class="struct-plus">=</span>
+        <div class="struct-block">
+          <span class="struct-part" style="background:var(--accent-light); color:var(--accent-dark); padding:0.4rem 0.8rem; border-radius:6px;">genre + nombre</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: PHRASES -->
   <section id="phrases">
     <h2>Exemples en contexte</h2>
 
@@ -1295,6 +1434,58 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     min-width: 80px;
   }
 
+  /* Accord table */
+  .accord-table .meaning-col {
+    font-size: 0.85em;
+    color: var(--text-light);
+    text-align: left;
+  }
+
+  /* Structure demo */
+  .structure-demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+  }
+
+  .struct-block {
+    text-align: center;
+  }
+
+  .struct-part {
+    display: block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+  }
+
+  .struct-part.struct-subject {
+    background: var(--teal-light);
+    color: var(--teal);
+  }
+
+  .struct-part.struct-adj {
+    background: var(--accent-light);
+    color: var(--accent-dark);
+  }
+
+  .struct-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.3rem;
+  }
+
+  .struct-plus {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    font-weight: 600;
+  }
+
   /* Footer */
   footer {
     text-align: center;
@@ -1509,6 +1700,47 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       correct: "ذَهَبْتَ",
       options: ["ذَهَبْتَ", "ذَهَبْتِ", "تَذْهَبُ", "ذَهَبَ"],
       explanation: "أَنْتَ au ماضي prend le suffixe ـتَ (avec fatḥa)"
+    },
+    {
+      context: "Complète : ______ الْمُعَلِّمُونَ الدَّرْسَ",
+      verb: "شَرَحَ",
+      info: "Verbe AVANT le sujet (جملة فعلية)",
+      correct: "شَرَحَ",
+      options: ["شَرَحَ", "شَرَحُوا", "شَرَحَتْ", "شَرَحْنَ"],
+      explanation: "Quand le verbe vient avant le sujet, il reste au singulier. Accord en genre seulement."
+    },
+    {
+      context: "Complète : الْمُعَلِّمُونَ ______ الدَّرْسَ",
+      verb: "شَرَحَ",
+      info: "Verbe APRÈS le sujet (جملة اسمية)",
+      correct: "شَرَحُوا",
+      options: ["شَرَحُوا", "شَرَحَ", "شَرَحَتْ", "شَرَحْنَ"],
+      explanation: "Quand le sujet vient en premier, le verbe s'accorde en genre ET en nombre : ـوا pour le masculin pluriel."
+    },
+    {
+      context: "Complète : ______ الطَّالِبَاتُ الدَّرْسَ",
+      verb: "فَهِمَ",
+      info: "Verbe AVANT le sujet (جملة فعلية)",
+      correct: "فَهِمَتِ",
+      options: ["فَهِمَتِ", "فَهِمْنَ", "فَهِمَ", "فَهِمُوا"],
+      explanation: "Verbe avant un sujet féminin → singulier féminin (+ تْ). Pas d'accord en nombre."
+    },
+    {
+      context: "Complète : الطَّالِبَاتُ ______ الدَّرْسَ",
+      verb: "فَهِمَ",
+      info: "Verbe APRÈS le sujet (جملة اسمية)",
+      correct: "فَهِمْنَ",
+      options: ["فَهِمْنَ", "فَهِمَتْ", "فَهِمَ", "فَهِمُوا"],
+      explanation: "Sujet en premier (fém. pl.) → le verbe s'accorde en genre et nombre : suffixe ـنَ."
+    },
+    {
+      context: "Quelle phrase est correcte ?",
+      verb: "كَتَبَ / الطُّلَّابُ",
+      info: "Verbe avant le sujet",
+      correct: "كَتَبَ الطُّلَّابُ",
+      options: ["كَتَبَ الطُّلَّابُ", "كَتَبُوا الطُّلَّابُ", "كَتَبْنَ الطُّلَّابُ", "كَتَبَتِ الطُّلَّابُ"],
+      explanation: "Verbe avant sujet masculin → singulier masculin. كَتَبُوا serait correct seulement si الطُّلَّابُ venait en premier.",
+      frOptions: true
     },
   ];
 

@@ -55,6 +55,34 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </div>
     </div>
 
+    <div class="concept-box teal">
+      <h4>Pourquoi ces noms ?</h4>
+      <p>Les noms des trois cas ne sont pas arbitraires. Ils décrivent à la fois le <strong>mouvement de la bouche</strong> quand on prononce la voyelle, et le <strong>rôle du mot</strong> dans la phrase.</p>
+
+      <div class="etymology-grid">
+        <div class="etymology-item">
+          <span class="etymology-ar">رَفْع</span>
+          <span class="etymology-verb">رَفَعَ = élever</span>
+          <span class="etymology-phonetic">La ضمّة (u) <strong>élève</strong> la mâchoire et arrondit les lèvres vers le haut</span>
+          <span class="etymology-syntactic">Le sujet a le statut le plus <strong>élevé</strong> dans la phrase — c'est l'agent de l'action</span>
+        </div>
+        <div class="etymology-item">
+          <span class="etymology-ar">نَصْب</span>
+          <span class="etymology-verb">نَصَبَ = dresser</span>
+          <span class="etymology-phonetic">La فَتْحَة (a) <strong>ouvre</strong> la bouche verticalement — la mâchoire se "dresse" en s'écartant</span>
+          <span class="etymology-syntactic">Voyelle la plus <strong>légère</strong> à prononcer, réservée aux objets — les plus <strong>fréquents</strong> dans le discours</span>
+        </div>
+        <div class="etymology-item">
+          <span class="etymology-ar">جَرّ</span>
+          <span class="etymology-verb">جَرَّ = traîner, tirer</span>
+          <span class="etymology-phonetic">La كَسْرَة (i) fait <strong>descendre</strong> la mâchoire — le son est "tiré vers le bas"</span>
+          <span class="etymology-syntactic">La préposition <strong>tire</strong> et relie ce qui précède à ce qui suit</span>
+        </div>
+      </div>
+
+      <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-light);">Source : al-Zajjājī (m. 949), <em>al-Īḍāḥ fī ʿilal al-naḥw</em>. L'école de Koufa utilisait le terme خَفْض (khafd = abaissement) au lieu de جَرّ, confirmant la métaphore descendante.</p>
+    </div>
+
     <div class="concept-box highlight">
       <h4>Pourquoi apprendre les déclinaisons ?</h4>
       <p>En arabe parlé (dialectal), les déclinaisons ont largement disparu. Mais en arabe standard (الفصحى), elles sont essentielles pour lire correctement, comprendre les textes et écrire avec précision. Les déclinaisons sont aussi la clé pour comprendre la grammaire arabe en profondeur.</p>
@@ -739,6 +767,77 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     margin-bottom: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+  }
+
+  /* Etymology grid */
+  .etymology-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .etymology-item {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.2rem 1rem;
+    align-items: baseline;
+    padding: 0.8rem 1rem;
+    background: var(--teal-light);
+    border-radius: 8px;
+  }
+
+  .etymology-ar {
+    font-family: 'Amiri', serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--teal);
+    direction: rtl;
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+
+  .etymology-verb {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8em;
+    color: var(--teal);
+    grid-column: 2;
+  }
+
+  .etymology-phonetic {
+    font-size: 0.88rem;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .etymology-syntactic {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+
+  @media (max-width: 600px) {
+    .etymology-item {
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto auto;
+    }
+    .etymology-ar {
+      grid-row: 1 / 2;
+    }
+    .etymology-verb {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .etymology-phonetic {
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+    .etymology-syntactic {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
   }
 
   /* Cases overview cards */
